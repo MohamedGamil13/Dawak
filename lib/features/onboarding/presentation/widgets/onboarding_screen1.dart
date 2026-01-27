@@ -3,6 +3,7 @@ import 'package:dawak/core/widgets/custom_button.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/doctor_image.dart';
 import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OnboardingScreen1 extends StatelessWidget {
   const OnboardingScreen1({super.key});
@@ -15,7 +16,7 @@ class OnboardingScreen1 extends StatelessWidget {
         const DoctorImage(),
         Text(S.of(context).onBorading1solgan1, style: AppStyles.bold32black),
         Text(S.of(context).onBorading1solgan2, style: AppStyles.bold32black),
-        const SizedBox(height: 20),
+        SizedBox(height: 20.h),
         Text(
           S.of(context).subTitle,
           style: AppStyles.w500gray20,

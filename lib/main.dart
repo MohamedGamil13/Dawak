@@ -3,8 +3,10 @@ import 'package:dawak/features/onboarding/presentation/screens/onboarding_screen
 import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-void main() {
+void main() async {
+  await ScreenUtil.ensureScreenSize();
   runApp(Dawak());
 }
 
@@ -13,18 +15,21 @@ class Dawak extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      locale: Locale('en'),
-      localizationsDelegates: [
-        S.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: S.delegate.supportedLocales,
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(scaffoldBackgroundColor: AppColors.scaffoldColor),
-      home: OnboardingScreen(),
+    return ScreenUtilInit(
+      designSize: const Size(360, 690),
+      child: MaterialApp(
+        locale: Locale('en'),
+        localizationsDelegates: [
+          S.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: S.delegate.supportedLocales,
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(scaffoldBackgroundColor: AppColors.scaffoldColor),
+        home: OnboardingScreen(),
+      ),
     );
   }
 }
