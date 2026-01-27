@@ -5,4 +5,6 @@ abstract class AppColors {
   static const Color scaffoldColor = Color(0xfff6f8f7);
   static const Color seconderyColor = Color(0xffdff6e8);
   static const Color graySubtitle = Color(0xff5e6e65);
+  static const Color white = Color(0xffffffff);
+  static const Color grayborder = Color(0xffeff2f1);
 }

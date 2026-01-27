@@ -11,4 +11,8 @@ abstract class AppStyles {
     fontWeight: .w500,
     color: AppColors.graySubtitle,
   );
+  static const TextStyle w500black20 = TextStyle(
+    fontSize: 20,
+    fontWeight: .w500,
+  );
 }

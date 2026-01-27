@@ -1,3 +1,4 @@
+import 'package:dawak/features/onboarding/presentation/widgets/feature_item.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingScreen2 extends StatelessWidget {
@@ -5,6 +6,6 @@ class OnboardingScreen2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column();
+    return const Column(children: [FeatureItem(type: "vitmains")]);
   }
 }

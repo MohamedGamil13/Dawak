@@ -88,6 +88,11 @@ class S {
   String get nextButton {
     return Intl.message('Next', name: 'nextButton', desc: '', args: []);
   }
+
+  /// `vitmen`
+  String get feature1 {
+    return Intl.message('vitmen', name: 'feature1', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
