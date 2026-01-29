@@ -1,3 +1,4 @@
+import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class MedicationSearchCard extends StatelessWidget {
@@ -7,7 +8,7 @@ class MedicationSearchCard extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppColors.white,
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
@@ -23,16 +24,16 @@ class MedicationSearchCard extends StatelessWidget {
           Container(
             padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
             decoration: BoxDecoration(
-              color: Color(0xFFE9F5EF),
+              color: AppColors.lightGreen,
               borderRadius: BorderRadius.circular(12),
             ),
             child: Row(
               children: [
-                Icon(Icons.search, color: Color(0xFF27C466)), // أيقونة البحث
+                Icon(Icons.search, color: AppColors.primaryColor),
                 SizedBox(width: 10),
                 Text(
                   'Search medications...',
-                  style: TextStyle(color: Color(0xFF5A9B7A), fontSize: 16),
+                  style: TextStyle(color: AppColors.darkGreen, fontSize: 16),
                 ),
               ],
             ),
@@ -40,20 +41,18 @@ class MedicationSearchCard extends StatelessWidget {
 
           SizedBox(height: 16),
 
-          // القسم السفلي (العنصر المقترح)
           Row(
             children: [
-              // أيقونة علبة الدواء
               Container(
                 padding: EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  color: Color(0xFFE9F5EF),
+                  color: AppColors.lightGreen,
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Icon(Icons.medication, color: Color(0xFF27C466)),
               ),
               SizedBox(width: 12),
-              // الأسطر الرمادية (التي تمثل النص)
+
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -63,12 +62,12 @@ class MedicationSearchCard extends StatelessWidget {
                 ],
               ),
               Spacer(),
-              // الزر الدائري الصغير على اليمين
+
               Container(
                 width: 40,
                 height: 25,
                 decoration: BoxDecoration(
-                  color: Color(0xFFD1F2E1),
+                  color: AppColors.mintGreen,
                   borderRadius: BorderRadius.circular(15),
                 ),
               ),

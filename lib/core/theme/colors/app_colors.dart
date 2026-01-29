@@ -7,4 +7,7 @@ abstract class AppColors {
   static const Color graySubtitle = Color(0xff5e6e65);
   static const Color white = Color(0xffffffff);
   static const Color grayborder = Color(0xffeff2f1);
+  static const Color lightGreen = Color(0xffE9F5EF);
+  static const Color darkGreen = Color(0xFF5A9B7A);
+  static const Color mintGreen = Color(0xFFD1F2E1);
 }
