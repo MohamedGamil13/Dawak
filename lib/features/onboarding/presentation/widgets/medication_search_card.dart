@@ -23,7 +23,7 @@ class MedicationSearchCard extends StatelessWidget {
           Container(
             padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
             decoration: BoxDecoration(
-              color: Color(0xFFE9F5EF), // اللون الأخضر الفاتح جداً للخلفية
+              color: Color(0xFFE9F5EF),
               borderRadius: BorderRadius.circular(12),
             ),
             child: Row(
