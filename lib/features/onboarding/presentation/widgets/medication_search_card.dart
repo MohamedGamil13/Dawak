@@ -15,6 +15,7 @@ class MedicationSearchCard extends StatelessWidget {
             color: Colors.black.withOpacity(0.05),
             blurRadius: 10,
             spreadRadius: 2,
+            blurStyle: .outer,
           ),
         ],
       ),
@@ -56,9 +57,24 @@ class MedicationSearchCard extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(height: 10, width: 100, color: Colors.grey[300]),
+                  Container(
+                    height: 10,
+                    width: 100,
+
+                    decoration: BoxDecoration(
+                      color: Colors.grey[300],
+                      borderRadius: BorderRadius.circular(18),
+                    ),
+                  ),
                   SizedBox(height: 6),
-                  Container(height: 10, width: 60, color: Colors.grey[200]),
+                  Container(
+                    height: 10,
+                    width: 60,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(18),
+                    ),
+                  ),
                 ],
               ),
               Spacer(),
