@@ -11,20 +11,38 @@ class OnboardingScreen1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: .center,
       children: [
-        const DoctorImage(),
-        Text(S.of(context).onBorading1solgan1, style: AppStyles.bold32black),
-        Text(S.of(context).onBorading1solgan2, style: AppStyles.bold32black),
-        SizedBox(height: 20.h),
-        Text(
-          S.of(context).subTitle,
-          style: AppStyles.w500gray20,
-          textAlign: .center,
+        /// CONTENT
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              const DoctorImage(),
+              Text(
+                S.of(context).onBorading1solgan1,
+                style: AppStyles.bold32black,
+                textAlign: TextAlign.center,
+              ),
+              Text(
+                S.of(context).onBorading1solgan2,
+                style: AppStyles.bold32black,
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: 20.h),
+              Text(
+                S.of(context).subTitle,
+                style: AppStyles.w500gray20,
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
         ),
-        const Spacer(flex: 3),
-        CustomButton(onPressed: () {}, text: S.of(context).nextButton),
-        const Spacer(),
+
+        /// BUTTON (Fixed Position)
+        Padding(
+          padding: EdgeInsets.only(bottom: 24.h),
+          child: CustomButton(onPressed: () {}, text: S.of(context).nextButton),
+        ),
       ],
     );
   }
