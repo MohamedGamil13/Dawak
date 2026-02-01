@@ -13,18 +13,14 @@ class OnboardingScreen3 extends StatelessWidget {
       onboradingBody: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const Expanded(child: ConsultationChatCard()),
+          const ConsultationChatCard(),
           SizedBox(height: 30.h),
           const Text(
             'Consult a Pharmacist',
             style: AppStyles.bold32black,
             textAlign: TextAlign.center,
           ),
-          const Text(
-            'Anytime',
-            style: AppStyles.bold32black,
-            textAlign: TextAlign.center,
-          ),
+
           SizedBox(height: 12.h),
           Text(
             'Chat with our licensed pharmacists for medical advice or '
