@@ -1,4 +1,11 @@
+import 'package:dawak/core/constants/app_images.dart';
+import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/core/theme/styles/app_styles.dart';
+import 'package:dawak/core/widgets/circle_image.dart';
+import 'package:dawak/core/widgets/custom_icon.dart';
+import 'package:dawak/features/onboarding/presentation/widgets/chat_bubble.dart';
+import 'package:dawak/features/onboarding/presentation/widgets/chat_image_message.dart';
+import 'package:dawak/features/onboarding/presentation/widgets/chat_input_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -11,7 +18,7 @@ class ConsultationChatCard extends StatelessWidget {
       padding: EdgeInsets.all(16.w),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(20.r),
+        borderRadius: BorderRadius.circular(8.r),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.05),
@@ -30,104 +37,63 @@ class ConsultationChatCard extends StatelessWidget {
                 width: 8.w,
                 height: 8.w,
                 decoration: const BoxDecoration(
-                  color: Colors.green,
+                  color: AppColors.primaryColor,
                   shape: BoxShape.circle,
                 ),
               ),
-              SizedBox(width: 6.w),
+              SizedBox(width: 7.w),
               Text(
                 'Live Support',
-                style: AppStyles.w500gray20.copyWith(fontSize: 14.sp),
+                style: AppStyles.w500black10.copyWith(fontSize: 14.sp),
               ),
             ],
           ),
-
+          Divider(thickness: 0.1),
           SizedBox(height: 16.h),
 
           /// Pharmacist message
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: .start,
             children: [
-              CircleAvatar(radius: 16.r, backgroundColor: Colors.grey.shade300),
+              CircleImage(image: AppImages.chatPersonImage),
               SizedBox(width: 10.w),
               Expanded(
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: .start,
+                  mainAxisAlignment: .start,
                   children: [
-                    Text(
-                      'PHARMACIST SARAH',
-                      style: AppStyles.w500gray20.copyWith(
-                        fontSize: 12.sp,
-                        color: Colors.green,
-                      ),
+                    const ChatBubble(
+                      text: 'Hello! How can I help you today?',
+                      isSender: true,
                     ),
                     SizedBox(height: 4.h),
-                    Container(
-                      padding: EdgeInsets.all(10.w),
-                      decoration: BoxDecoration(
-                        color: Colors.grey.shade100,
-                        borderRadius: BorderRadius.circular(12.r),
-                      ),
-                      child: Text(
-                        'Hello! How can I help you today?',
-                        style: AppStyles.w500gray20.copyWith(fontSize: 14.sp),
-                      ),
-                    ),
                   ],
                 ),
               ),
             ],
           ),
-
           SizedBox(height: 16.h),
 
           /// Upload prescription box
-          Container(
-            width: double.infinity,
-            padding: EdgeInsets.symmetric(vertical: 24.h),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12.r),
-              border: Border.all(color: Colors.green, style: BorderStyle.solid),
-            ),
-            child: Column(
-              children: [
-                const Icon(Icons.description, color: Colors.green),
-                SizedBox(height: 8.h),
-                Text(
-                  'Prescription_01.jpg',
-                  style: AppStyles.w500gray20.copyWith(fontSize: 13.sp),
-                ),
-                SizedBox(height: 4.h),
-                Text(
-                  'Uploaded 1m ago',
-                  style: AppStyles.w500gray20.copyWith(
-                    fontSize: 11.sp,
-                    color: Colors.grey,
-                  ),
-                ),
-              ],
-            ),
-          ),
-
+          Align(alignment: .bottomRight, child: ChatImageMessage()),
           SizedBox(height: 12.h),
 
           /// User message
           Align(
             alignment: Alignment.centerRight,
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 8.h),
-              decoration: BoxDecoration(
-                color: Colors.green,
-                borderRadius: BorderRadius.circular(16.r),
-              ),
-              child: Text(
-                "I've uploaded my prescription.",
-                style: AppStyles.w500gray20.copyWith(
-                  color: Colors.white,
-                  fontSize: 13.sp,
-                ),
-              ),
+            child: ChatBubble(
+              isSender: false,
+              text: "I've uploaded my prescription.",
             ),
+          ),
+          //input fields
+          SizedBox(height: 12.h),
+          Row(
+            children: [
+              Expanded(child: ChatInputField()),
+              CustomIcon(icon: Icons.camera_alt),
+            ],
           ),
         ],
       ),

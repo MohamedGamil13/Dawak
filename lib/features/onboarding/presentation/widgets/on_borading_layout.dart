@@ -12,7 +12,7 @@ class OnBoradingLayout extends StatelessWidget {
       children: [
         Expanded(child: onboradingBody),
         Padding(
-          padding: EdgeInsets.only(bottom: 24.h),
+          padding: EdgeInsets.only(bottom: 12.h),
           child: CustomButton(onPressed: () {}, text: S.of(context).nextButton),
         ),
       ],
