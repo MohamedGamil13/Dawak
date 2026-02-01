@@ -13,11 +13,13 @@ class CustomListtile extends StatelessWidget {
   final String subtitle;
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: ListTile(
-        leading: CustomIcon(icon: icon),
-        title: Text(title),
-        subtitle: Text(subtitle),
+    return SizedBox(
+      child: Card(
+        child: ListTile(
+          leading: CustomIcon(icon: icon),
+          title: Text(title),
+          subtitle: Text(subtitle),
+        ),
       ),
     );
   }
