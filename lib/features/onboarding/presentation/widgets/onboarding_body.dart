@@ -1,5 +1,6 @@
 import 'package:dawak/features/onboarding/presentation/widgets/onboarding_screen1.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/onboarding_screen2.dart';
+import 'package:dawak/features/onboarding/presentation/widgets/onboarding_screen3.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingBody extends StatefulWidget {
@@ -30,7 +31,11 @@ class _OnboardingBodyState extends State<OnboardingBody> {
         padding: const EdgeInsets.all(26),
         child: PageView(
           // controller: pageController,
-          children: [OnboardingScreen1(), OnboardingScreen2()],
+          children: [
+            OnboardingScreen1(),
+            OnboardingScreen2(),
+            OnboardingScreen3(),
+          ],
         ),
       ),
     );
