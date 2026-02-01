@@ -1,9 +1,9 @@
 import 'package:dawak/core/constants/app_images.dart';
 import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/core/theme/styles/app_styles.dart';
+import 'package:dawak/core/widgets/chat_bubble.dart';
 import 'package:dawak/core/widgets/circle_image.dart';
 import 'package:dawak/core/widgets/custom_icon.dart';
-import 'package:dawak/features/onboarding/presentation/widgets/chat_bubble.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/chat_image_message.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/chat_input_field.dart';
 import 'package:flutter/material.dart';

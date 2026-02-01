@@ -1,6 +1,7 @@
-import 'package:dawak/features/onboarding/presentation/widgets/onboarding_screen1.dart';
-import 'package:dawak/features/onboarding/presentation/widgets/onboarding_screen2.dart';
-import 'package:dawak/features/onboarding/presentation/widgets/onboarding_screen3.dart';
+import 'package:dawak/features/onboarding/presentation/screens/onboarding_screen1.dart';
+import 'package:dawak/features/onboarding/presentation/screens/onboarding_screen2.dart';
+import 'package:dawak/features/onboarding/presentation/screens/onboarding_screen3.dart';
+import 'package:dawak/features/onboarding/presentation/screens/onboarding_screen4.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingBody extends StatefulWidget {
@@ -35,6 +36,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
             OnboardingScreen1(),
             OnboardingScreen2(),
             OnboardingScreen3(),
+            OnboardingScreen4(),
           ],
         ),
       ),
