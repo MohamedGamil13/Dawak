@@ -2,6 +2,7 @@ import 'package:dawak/core/theme/styles/app_styles.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/feature_items_row.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/medication_search_card.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/on_borading_layout.dart';
+import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,20 +19,19 @@ class OnboardingScreen2 extends StatelessWidget {
           SizedBox(height: 30.h),
           const MedicationSearchCard(),
           SizedBox(height: 30.h),
-          const Text(
-            'Find and order',
+          Text(
+            S.of(context).onboardingScreen2Text1,
             style: AppStyles.bold32black,
             textAlign: TextAlign.center,
           ),
-          const Text(
-            'Medicines Easily',
+          Text(
+            S.of(context).onboardingScreen2Text2,
             style: AppStyles.bold32black,
             textAlign: TextAlign.center,
           ),
           SizedBox(height: 10.h),
           Text(
-            'Search from over 10,000+ certified medications and healthcare products. '
-            'Order in seconds and track your delivery.',
+            S.of(context).onboardingScreen2Text3,
             style: AppStyles.w500gray20,
             textAlign: TextAlign.center,
           ),

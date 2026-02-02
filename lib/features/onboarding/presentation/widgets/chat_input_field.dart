@@ -1,3 +1,4 @@
+import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class ChatInputField extends StatelessWidget {
@@ -9,7 +10,7 @@ class ChatInputField extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: TextField(
         decoration: InputDecoration(
-          hintText: "Type a message...",
+          hintText: S.of(context).consultationChatCardTextHint,
           hintStyle: TextStyle(color: Colors.grey[400]),
           filled: true,
           fillColor: Colors.grey[100],

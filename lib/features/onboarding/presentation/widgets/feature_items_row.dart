@@ -1,4 +1,5 @@
 import 'package:dawak/features/onboarding/presentation/widgets/feature_item.dart';
+import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -9,27 +10,33 @@ class FeatureItemsRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
-      child: const Column(
+      child: Column(
         children: [
           Row(
             mainAxisAlignment: .spaceAround,
             children: [
-              FeatureItem(type: "vitamins", icon: FontAwesomeIcons.pills),
               FeatureItem(
-                type: "First Aid",
+                type: S.of(context).feature1,
+                icon: FontAwesomeIcons.pills,
+              ),
+              FeatureItem(
+                type: S.of(context).feature2,
                 icon: FontAwesomeIcons.suitcaseMedical,
               ),
             ],
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Row(
             mainAxisAlignment: .spaceAround,
             children: [
               FeatureItem(
-                type: "Daily Care",
+                type: S.of(context).feature3,
                 icon: FontAwesomeIcons.solidHeart,
               ),
-              FeatureItem(type: "Skin Care", icon: FontAwesomeIcons.bandage),
+              FeatureItem(
+                type: S.of(context).feature4,
+                icon: FontAwesomeIcons.bandage,
+              ),
             ],
           ),
         ],

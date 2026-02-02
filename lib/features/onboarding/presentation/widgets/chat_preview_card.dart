@@ -6,6 +6,7 @@ import 'package:dawak/core/widgets/circle_image.dart';
 import 'package:dawak/core/widgets/custom_icon.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/chat_image_message.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/chat_input_field.dart';
+import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -43,7 +44,7 @@ class ConsultationChatCard extends StatelessWidget {
               ),
               SizedBox(width: 7.w),
               Text(
-                'Live Support',
+                S.of(context).consultationChatCardTitle,
                 style: AppStyles.w500black10.copyWith(fontSize: 14.sp),
               ),
             ],
@@ -63,8 +64,8 @@ class ConsultationChatCard extends StatelessWidget {
                   crossAxisAlignment: .start,
                   mainAxisAlignment: .start,
                   children: [
-                    const ChatBubble(
-                      text: 'Hello! How can I help you today?',
+                    ChatBubble(
+                      text: S.of(context).consultationChatCardChatMessage,
                       isSender: true,
                     ),
                     SizedBox(height: 4.h),
@@ -84,7 +85,7 @@ class ConsultationChatCard extends StatelessWidget {
             alignment: Alignment.centerRight,
             child: ChatBubble(
               isSender: false,
-              text: "I've uploaded my prescription.",
+              text: S.of(context).consultationChatCardMessage2,
             ),
           ),
           //input fields

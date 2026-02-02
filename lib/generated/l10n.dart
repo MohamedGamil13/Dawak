@@ -89,9 +89,214 @@ class S {
     return Intl.message('Next', name: 'nextButton', desc: '', args: []);
   }
 
-  /// `vitmen`
+  /// `vitamins`
   String get feature1 {
-    return Intl.message('vitmen', name: 'feature1', desc: '', args: []);
+    return Intl.message('vitamins', name: 'feature1', desc: '', args: []);
+  }
+
+  /// `First Aid`
+  String get feature2 {
+    return Intl.message('First Aid', name: 'feature2', desc: '', args: []);
+  }
+
+  /// `Daily Care`
+  String get feature3 {
+    return Intl.message('Daily Care', name: 'feature3', desc: '', args: []);
+  }
+
+  /// `Skin Care`
+  String get feature4 {
+    return Intl.message('Skin Care', name: 'feature4', desc: '', args: []);
+  }
+
+  /// `Search medications...`
+  String get searchHint {
+    return Intl.message(
+      'Search medications...',
+      name: 'searchHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Find and order`
+  String get onboardingScreen2Text1 {
+    return Intl.message(
+      'Find and order',
+      name: 'onboardingScreen2Text1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Medicines Easily`
+  String get onboardingScreen2Text2 {
+    return Intl.message(
+      'Medicines Easily',
+      name: 'onboardingScreen2Text2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search from over 10,000+ certified medications and healthcare products. Order in seconds and track your delivery.`
+  String get onboardingScreen2Text3 {
+    return Intl.message(
+      'Search from over 10,000+ certified medications and healthcare products. Order in seconds and track your delivery.',
+      name: 'onboardingScreen2Text3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Live Support`
+  String get consultationChatCardTitle {
+    return Intl.message(
+      'Live Support',
+      name: 'consultationChatCardTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hello! How can I help you today?`
+  String get consultationChatCardChatMessage {
+    return Intl.message(
+      'Hello! How can I help you today?',
+      name: 'consultationChatCardChatMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Type a message...`
+  String get consultationChatCardTextHint {
+    return Intl.message(
+      'Type a message...',
+      name: 'consultationChatCardTextHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` I've uploaded my prescription.`
+  String get consultationChatCardMessage2 {
+    return Intl.message(
+      ' I\'ve uploaded my prescription.',
+      name: 'consultationChatCardMessage2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Consult a Pharmacist`
+  String get onBoardingScreen3Text1 {
+    return Intl.message(
+      'Consult a Pharmacist',
+      name: 'onBoardingScreen3Text1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `  Chat with our licensed pharmacists for medical advice or   quickly upload your prescription to get started.`
+  String get onBoardingScreen3Text2 {
+    return Intl.message(
+      '  Chat with our licensed pharmacists for medical advice or   quickly upload your prescription to get started.',
+      name: 'onBoardingScreen3Text2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reminder`
+  String get onBoardingScreen4Text1 {
+    return Intl.message(
+      'Reminder',
+      name: 'onBoardingScreen4Text1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Time for your morning dose`
+  String get onBoardingScreen4Text2 {
+    return Intl.message(
+      'Time for your morning dose',
+      name: 'onBoardingScreen4Text2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Refill Out`
+  String get onBoardingScreen4Text3 {
+    return Intl.message(
+      'Refill Out',
+      name: 'onBoardingScreen4Text3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your refill is arriving today`
+  String get onBoardingScreen4Text4 {
+    return Intl.message(
+      'Your refill is arriving today',
+      name: 'onBoardingScreen4Text4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Never Miss a Dose`
+  String get onBoardingScreen4Text5 {
+    return Intl.message(
+      'Never Miss a Dose',
+      name: 'onBoardingScreen4Text5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Set automatic reminders for your medications and subscribe to chronic care plans for seamless, doorstep refills. `
+  String get onBoardingScreen4Text6 {
+    return Intl.message(
+      ' Set automatic reminders for your medications and subscribe to chronic care plans for seamless, doorstep refills. ',
+      name: 'onBoardingScreen4Text6',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Active Subscription`
+  String get onBoardingScreen4Text7 {
+    return Intl.message(
+      'Active Subscription',
+      name: 'onBoardingScreen4Text7',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lisinopril 10mg`
+  String get onBoardingScreen4Text8 {
+    return Intl.message(
+      'Lisinopril 10mg',
+      name: 'onBoardingScreen4Text8',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Daily, 8:00 AM`
+  String get onBoardingScreen4Text9 {
+    return Intl.message(
+      'Daily, 8:00 AM',
+      name: 'onBoardingScreen4Text9',
+      desc: '',
+      args: [],
+    );
   }
 }
 

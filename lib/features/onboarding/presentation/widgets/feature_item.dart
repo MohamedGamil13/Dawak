@@ -13,14 +13,6 @@ class FeatureItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(18),
         color: AppColors.white,
         border: Border.all(color: AppColors.grayborder, width: 1.5),
-        // boxShadow: [
-        //   BoxShadow(
-        //     color: Colors.grey.withOpacity(0.5),
-        //     spreadRadius: 1,
-        //     blurRadius: 7,
-        //     offset: Offset(5, 5),
-        //   ),
-        // ],
       ),
 
       child: Padding(
