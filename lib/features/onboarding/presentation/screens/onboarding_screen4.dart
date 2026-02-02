@@ -1,5 +1,6 @@
 import 'package:dawak/core/widgets/custom_listtile.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/on_borading_layout.dart';
+import 'package:dawak/features/onboarding/presentation/widgets/subscription_card.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -16,6 +17,7 @@ class OnboardingScreen4 extends StatelessWidget {
             title: "Remindar",
             subtitle: "Time for your morning dose",
           ),
+          SubscriptionCard(),
         ],
       ),
     );
