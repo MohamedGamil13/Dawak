@@ -8,10 +8,12 @@ class CustomListtile extends StatelessWidget {
     required this.icon,
     required this.title,
     required this.subtitle,
+    this.iconColor,
   });
   final IconData icon;
   final String title;
   final String subtitle;
+  final Color? iconColor;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -20,7 +22,7 @@ class CustomListtile extends StatelessWidget {
         color: AppColors.white,
         shadowColor: Colors.grey[100],
         child: ListTile(
-          leading: CustomIcon(icon: icon),
+          leading: CustomIcon(icon: icon, iconColor: iconColor),
           title: Text(title, style: TextStyle(fontWeight: .w600)),
           subtitle: Text(subtitle),
         ),
