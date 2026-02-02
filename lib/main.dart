@@ -18,7 +18,7 @@ class Dawak extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(360, 690),
       child: MaterialApp(
-        locale: Locale('ar'),
+        locale: Locale('en'),
         localizationsDelegates: [
           S.delegate,
           GlobalMaterialLocalizations.delegate,
