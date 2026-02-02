@@ -15,7 +15,7 @@ class SqaureIcon extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
       ),
       child: Center(
-        child: Icon(FontAwesomeIcons.pills, color: AppColors.primaryColor),
+        child: Icon(FontAwesomeIcons.pills, color: AppColors.green),
       ),
     );
   }
