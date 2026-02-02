@@ -43,7 +43,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "استشر صيدليًا",
     ),
     "onBoardingScreen3Text2": MessageLookupByLibrary.simpleMessage(
-      "تواصل مع صيادلة مرخصين للحصول على نصائح طبية أو قم برفع الروشتة الخاصة بك بسرعة للبدء.",
+      "تواصل مع صيادلة مرخصين للحصول على نصائح طبية أو قم برفع الروشتة الخاصة بك .",
     ),
     "onBoardingScreen4Text1": MessageLookupByLibrary.simpleMessage("تذكير"),
     "onBoardingScreen4Text2": MessageLookupByLibrary.simpleMessage(

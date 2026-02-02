@@ -23,10 +23,12 @@ class OnboardingScreen3 extends StatelessWidget {
           ),
 
           SizedBox(height: 12.h),
-          Text(
-            S.of(context).onBoardingScreen3Text2,
-            style: AppStyles.w500gray20,
-            textAlign: TextAlign.center,
+          Expanded(
+            child: Text(
+              S.of(context).onBoardingScreen3Text2,
+              style: AppStyles.w500gray20,
+              textAlign: TextAlign.center,
+            ),
           ),
         ],
       ),
