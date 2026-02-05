@@ -1,29 +1,33 @@
+import 'package:dawak/core/routing/app_navigator.dart';
 import 'package:flutter/material.dart';
 
 class PageViewProvider extends ChangeNotifier {
-  PageController pageController = PageController();
+  final PageController pageController = PageController();
+  final AppNavigator navigator;
+
+  PageViewProvider({required this.navigator});
+
   int _currentIndex = 0;
   int get currentIndex => _currentIndex;
+
+  static const int lastPageIndex = 3;
+
   void goNextPage() {
-    if (!isFinalPage()) {
+    if (!isFinalPage) {
       pageController.nextPage(
-        duration: Duration(milliseconds: 400),
+        duration: const Duration(milliseconds: 400),
         curve: Curves.easeInCubic,
       );
+    } else {
+      navigator.goSignIn(); // or goHome()
     }
-    ChangeNotifier();
   }
 
-  bool isFinalPage() {
-    if (currentIndex != 3) {
-      return false;
-    }
-    return true;
-  }
+  bool get isFinalPage => _currentIndex == lastPageIndex;
 
   void updatePageIndex(int pageIndex) {
     _currentIndex = pageIndex;
-    ChangeNotifier();
+    notifyListeners();
   }
 
   @override
