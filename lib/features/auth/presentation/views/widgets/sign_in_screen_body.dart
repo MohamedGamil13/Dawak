@@ -1,4 +1,6 @@
+import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/core/theme/styles/app_styles.dart';
+import 'package:dawak/core/widgets/custom_button.dart';
 import 'package:dawak/core/widgets/custom_textfeild.dart';
 import 'package:dawak/core/widgets/sqaure_icon.dart';
 import 'package:dawak/generated/l10n.dart';
@@ -64,6 +66,15 @@ class SignInScreenBody extends StatelessWidget {
                 icon: FontAwesomeIcons.lock,
               ),
             ),
+            TextButton(
+              onPressed: () {},
+              style: TextButton.styleFrom(foregroundColor: AppColors.green),
+              child: const Align(
+                alignment: AlignmentDirectional.centerEnd,
+                child: Text('Forget Password ?'),
+              ),
+            ),
+            CustomButton(onPressed: () {}, text: 'Login'),
           ],
         ),
       ),
