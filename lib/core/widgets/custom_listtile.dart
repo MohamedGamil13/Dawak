@@ -23,7 +23,7 @@ class CustomListtile extends StatelessWidget {
         shadowColor: Colors.grey[100],
         child: ListTile(
           leading: CustomIcon(icon: icon, iconColor: iconColor),
-          title: Text(title, style: TextStyle(fontWeight: .w600)),
+          title: Text(title, style: const TextStyle(fontWeight: .w600)),
           subtitle: Text(subtitle),
         ),
       ),

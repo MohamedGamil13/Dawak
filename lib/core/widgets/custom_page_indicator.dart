@@ -10,7 +10,7 @@ class CustomPageIndicator extends StatelessWidget {
     return SmoothPageIndicator(
       controller: pageController,
       count: 4,
-      effect: ExpandingDotsEffect(
+      effect: const ExpandingDotsEffect(
         activeDotColor: AppColors.primaryColor,
         dotColor: AppColors.mintGreen,
         dotHeight: 8,

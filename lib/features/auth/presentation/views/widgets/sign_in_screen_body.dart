@@ -1,5 +1,6 @@
 import 'package:dawak/core/widgets/sqaure_icon.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SignInScreenBody extends StatelessWidget {
   const SignInScreenBody({super.key});
@@ -7,10 +8,10 @@ class SignInScreenBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: const Column(
+      child: Column(
         children: [
-          SizedBox(height: 30),
-          SqaureIcon(icon: Icons.medical_services, dimensions: 80),
+          SizedBox(height: 30.h),
+          const SqaureIcon(icon: Icons.medical_services, dimensions: 80),
         ],
       ),
     );

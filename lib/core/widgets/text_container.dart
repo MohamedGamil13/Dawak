@@ -7,12 +7,12 @@ class TextContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(5),
+      padding: const EdgeInsets.all(5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         color: AppColors.mintGreen,
       ),
-      child: Text(text, style: TextStyle(color: AppColors.green)),
+      child: Text(text, style: const TextStyle(color: AppColors.green)),
     );
   }
 }

@@ -14,10 +14,10 @@ class ChatBubble extends StatelessWidget {
       decoration: BoxDecoration(
         color: isSender ? Colors.grey.shade100 : AppColors.primaryColor,
         borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(15),
-          topRight: Radius.circular(15),
-          bottomLeft: isSender ? .zero : Radius.circular(15),
-          bottomRight: isSender ? Radius.circular(15) : .zero,
+          topLeft: const Radius.circular(15),
+          topRight: const Radius.circular(15),
+          bottomLeft: isSender ? .zero : const Radius.circular(15),
+          bottomRight: isSender ? const Radius.circular(15) : .zero,
         ),
       ),
       child: Text(

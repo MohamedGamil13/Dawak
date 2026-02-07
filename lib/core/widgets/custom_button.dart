@@ -15,7 +15,7 @@ class CustomButton extends StatelessWidget {
         style: ButtonStyle(
           backgroundColor: WidgetStateProperty.all(AppColors.primaryColor),
         ),
-        child: Text(text, style: TextStyle(color: AppColors.scaffoldColor)),
+        child: Text(text, style: const TextStyle(color: AppColors.scaffoldColor)),
       ),
     );
   }

@@ -9,7 +9,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 void main() async {
   await ScreenUtil.ensureScreenSize();
   setupDependencies();
-  runApp(Dawak());
+  runApp(const Dawak());
 }
 
 class Dawak extends StatelessWidget {
@@ -20,8 +20,8 @@ class Dawak extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(360, 690),
       child: MaterialApp.router(
-        locale: Locale('ar'),
-        localizationsDelegates: [
+        locale: const Locale('ar'),
+        localizationsDelegates: const [
           S.delegate,
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,

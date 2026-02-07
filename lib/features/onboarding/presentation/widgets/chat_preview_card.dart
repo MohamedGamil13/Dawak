@@ -49,7 +49,7 @@ class ConsultationChatCard extends StatelessWidget {
               ),
             ],
           ),
-          Divider(thickness: 0.1),
+          const Divider(thickness: 0.1),
           SizedBox(height: 16.h),
 
           /// Pharmacist message
@@ -57,7 +57,7 @@ class ConsultationChatCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: .start,
             children: [
-              CircleImage(image: AppImages.chatPersonImage),
+              const CircleImage(image: AppImages.chatPersonImage),
               SizedBox(width: 10.w),
               Expanded(
                 child: Column(
@@ -77,7 +77,7 @@ class ConsultationChatCard extends StatelessWidget {
           SizedBox(height: 16.h),
 
           /// Upload prescription box
-          Align(alignment: .bottomRight, child: ChatImageMessage()),
+          const Align(alignment: .bottomRight, child: ChatImageMessage()),
           SizedBox(height: 12.h),
 
           /// User message
@@ -90,7 +90,7 @@ class ConsultationChatCard extends StatelessWidget {
           ),
           //input fields
           SizedBox(height: 12.h),
-          Row(
+          const Row(
             children: [
               Expanded(child: ChatInputField()),
               CustomIcon(icon: Icons.camera_alt),

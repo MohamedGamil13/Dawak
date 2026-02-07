@@ -14,7 +14,7 @@ class OnboardingScreen extends StatelessWidget {
       body: ChangeNotifierProvider(
         create: (BuildContext context) =>
             PageViewProvider(navigator: serviceLocator<AppNavigator>()),
-        child: OnboardingBody(),
+        child: const OnboardingBody(),
       ),
     );
   }

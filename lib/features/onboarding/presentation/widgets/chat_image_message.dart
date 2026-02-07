@@ -10,7 +10,7 @@ class ChatImageMessage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DottedBorder(
-      options: RoundedRectDottedBorderOptions(
+      options: const RoundedRectDottedBorderOptions(
         gradient: LinearGradient(
           colors: [
             AppColors.darkGreen,

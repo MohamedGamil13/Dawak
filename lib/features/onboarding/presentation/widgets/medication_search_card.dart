@@ -7,7 +7,7 @@ class MedicationSearchCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: AppColors.white,
         borderRadius: BorderRadius.circular(20),
@@ -24,36 +24,36 @@ class MedicationSearchCard extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
             decoration: BoxDecoration(
               color: AppColors.lightGreen,
               borderRadius: BorderRadius.circular(12),
             ),
             child: Row(
               children: [
-                Icon(Icons.search, color: AppColors.primaryColor),
-                SizedBox(width: 10),
+                const Icon(Icons.search, color: AppColors.primaryColor),
+                const SizedBox(width: 10),
                 Text(
                   S.of(context).searchHint,
-                  style: TextStyle(color: AppColors.darkGreen, fontSize: 16),
+                  style: const TextStyle(color: AppColors.darkGreen, fontSize: 16),
                 ),
               ],
             ),
           ),
 
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
 
           Row(
             children: [
               Container(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
                   color: AppColors.lightGreen,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: Icon(Icons.medication, color: Color(0xFF27C466)),
+                child: const Icon(Icons.medication, color: Color(0xFF27C466)),
               ),
-              SizedBox(width: 12),
+              const SizedBox(width: 12),
 
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,7 +67,7 @@ class MedicationSearchCard extends StatelessWidget {
                       borderRadius: BorderRadius.circular(18),
                     ),
                   ),
-                  SizedBox(height: 6),
+                  const SizedBox(height: 6),
                   Container(
                     height: 10,
                     width: 60,
@@ -78,7 +78,7 @@ class MedicationSearchCard extends StatelessWidget {
                   ),
                 ],
               ),
-              Spacer(),
+              const Spacer(),
 
               Container(
                 width: 40,

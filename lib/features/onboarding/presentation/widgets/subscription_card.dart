@@ -21,7 +21,7 @@ class SubscriptionCard extends StatelessWidget {
             Row(
               mainAxisAlignment: .spaceBetween,
               children: [
-                SqaureIcon(icon: FontAwesomeIcons.pills, dimensions: 50),
+                const SqaureIcon(icon: FontAwesomeIcons.pills, dimensions: 50),
                 TextContainer(text: S.of(context).onBoardingScreen4Text7),
               ],
             ),
@@ -38,7 +38,7 @@ class SubscriptionCard extends StatelessWidget {
                 ],
               ),
             ),
-            Divider(color: AppColors.grayborder, thickness: 1.5),
+            const Divider(color: AppColors.grayborder, thickness: 1.5),
           ],
         ),
       ),

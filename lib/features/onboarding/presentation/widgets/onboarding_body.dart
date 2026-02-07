@@ -22,7 +22,7 @@ class OnboardingBody extends StatelessWidget {
               onPageChanged: (index) {
                 value.updatePageIndex(index);
               },
-              children: [
+              children: const [
                 OnboardingScreen1(),
                 OnboardingScreen2(),
                 OnboardingScreen3(),
