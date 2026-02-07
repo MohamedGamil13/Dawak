@@ -28,5 +28,11 @@
   "onBoardingScreen4Text9": "Daily, 8:00 AM",
   "signInScreenTitle": "Sign In",
   "signInScreenText1": "Welcome Back",
-  "signInScreenText2": "Access your prescriptions and pharmacist consultations"
+  "signInScreenText2": "Access your prescriptions and pharmacist consultations",
+  "email": "Email",
+  "enterEmail": "Enter your Email",
+  "password": "password",
+  "enterPassword": "Enter your password",
+  "forgetPassword": "forgetPassword ?",
+  "login": "login"
 }

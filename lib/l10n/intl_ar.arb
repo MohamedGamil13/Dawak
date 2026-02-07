@@ -28,5 +28,11 @@
   "onBoardingScreen4Text9": "يوميًا، 8:00 صباحًا",
   "signInScreenTitle": "تسجيل الدخول",
   "signInScreenText1": "مرحبًا بعودتك",
-  "signInScreenText2": "يمكنك الوصول إلى روشتاتك واستشارات الصيدلي"
+  "signInScreenText2": "يمكنك الوصول إلى روشتاتك واستشارات الصيدلي",
+  "email": "البريد الإلكتروني",
+  "enterEmail": "أدخل بريدك الإلكتروني",
+  "password": "كلمة المرور",
+  "enterPassword": "أدخل كلمة المرور",
+  "forgetPassword": "نسيت كلمة المرور؟",
+  "login": "تسجيل الدخول"
 }

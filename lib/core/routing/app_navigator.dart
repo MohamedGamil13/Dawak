@@ -8,4 +8,5 @@ class AppNavigator {
   void goOnborading() => _appRouter.go(AppScreens.onboardingScreen);
   void goSignIn() => _appRouter.go(AppScreens.signInScreen);
   void goHome() => _appRouter.go(AppScreens.homeScreen);
+  void goSignUp() => _appRouter.go(AppScreens.signUpScreen);
 }

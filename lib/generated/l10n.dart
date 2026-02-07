@@ -328,6 +328,51 @@ class S {
       args: [],
     );
   }
+
+  /// `Email`
+  String get email {
+    return Intl.message('Email', name: 'email', desc: '', args: []);
+  }
+
+  /// `Enter your Email`
+  String get enterEmail {
+    return Intl.message(
+      'Enter your Email',
+      name: 'enterEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `password`
+  String get password {
+    return Intl.message('password', name: 'password', desc: '', args: []);
+  }
+
+  /// `Enter your password`
+  String get enterPassword {
+    return Intl.message(
+      'Enter your password',
+      name: 'enterPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `forgetPassword ?`
+  String get forgetPassword {
+    return Intl.message(
+      'forgetPassword ?',
+      name: 'forgetPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `login`
+  String get login {
+    return Intl.message('login', name: 'login', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

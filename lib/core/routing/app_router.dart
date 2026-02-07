@@ -1,5 +1,6 @@
 import 'package:dawak/core/routing/app_screens.dart';
 import 'package:dawak/features/auth/presentation/views/sign_in_screen.dart';
+import 'package:dawak/features/auth/presentation/views/sign_up_screen.dart';
 import 'package:dawak/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -22,6 +23,12 @@ final GoRouter router = GoRouter(
       path: AppScreens.signInScreen,
       builder: (BuildContext context, GoRouterState state) {
         return const SignInScreen();
+      },
+    ),
+    GoRoute(
+      path: AppScreens.signUpScreen,
+      builder: (BuildContext context, GoRouterState state) {
+        return const SignUpScreen();
       },
     ),
   ],

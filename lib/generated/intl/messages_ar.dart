@@ -34,10 +34,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "consultationChatCardTitle": MessageLookupByLibrary.simpleMessage(
       "دعم مباشر",
     ),
+    "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+    "enterEmail": MessageLookupByLibrary.simpleMessage("أدخل بريدك الإلكتروني"),
+    "enterPassword": MessageLookupByLibrary.simpleMessage("أدخل كلمة المرور"),
     "feature1": MessageLookupByLibrary.simpleMessage("الفيتامينات"),
     "feature2": MessageLookupByLibrary.simpleMessage("الإسعافات الأولية"),
     "feature3": MessageLookupByLibrary.simpleMessage("العناية اليومية"),
     "feature4": MessageLookupByLibrary.simpleMessage("العناية بالبشرة"),
+    "forgetPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
+    "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "nextButton": MessageLookupByLibrary.simpleMessage("التالي"),
     "onBoardingScreen3Text1": MessageLookupByLibrary.simpleMessage(
       "استشر صيدليًا",
@@ -81,6 +86,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "onboardingScreen2Text3": MessageLookupByLibrary.simpleMessage(
       "ابحث من بين أكثر من 10,000 دواء ومنتج صحي معتمد. اطلب في ثوانٍ وتابع توصيل طلبك.",
     ),
+    "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
     "searchHint": MessageLookupByLibrary.simpleMessage("ابحث عن الأدوية..."),
     "signInScreenText1": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك"),
     "signInScreenText2": MessageLookupByLibrary.simpleMessage(

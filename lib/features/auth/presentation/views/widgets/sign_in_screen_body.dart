@@ -1,3 +1,5 @@
+import 'package:dawak/core/locator/service_locator.dart';
+import 'package:dawak/core/routing/app_navigator.dart';
 import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/core/theme/styles/app_styles.dart';
 import 'package:dawak/core/widgets/custom_button.dart';
@@ -36,45 +38,50 @@ class SignInScreenBody extends StatelessWidget {
               maxLines: 2,
               textAlign: TextAlign.center,
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: Text(
-                'Email',
+                S.of(context).email,
                 style: AppStyles.w500black10,
                 textAlign: TextAlign.start,
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: CustomTextfield(
-                hint: 'Enter your email',
+                hint: S.of(context).enterEmail,
                 icon: Icons.email,
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: Text(
-                'Password',
+                S.of(context).password,
                 style: AppStyles.w500black10,
                 textAlign: TextAlign.start,
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: CustomTextfield(
-                hint: 'Enter your Password',
+                hint: S.of(context).enterPassword,
                 icon: FontAwesomeIcons.lock,
               ),
             ),
             TextButton(
               onPressed: () {},
               style: TextButton.styleFrom(foregroundColor: AppColors.green),
-              child: const Align(
+              child: Align(
                 alignment: AlignmentDirectional.centerEnd,
-                child: Text('Forget Password ?'),
+                child: Text(S.of(context).forgetPassword),
               ),
             ),
-            CustomButton(onPressed: () {}, text: 'Login'),
+            CustomButton(
+              onPressed: () {
+                serviceLocator<AppNavigator>().goSignUp();
+              },
+              text: S.of(context).login,
+            ),
           ],
         ),
       ),

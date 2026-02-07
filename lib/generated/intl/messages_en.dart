@@ -34,10 +34,17 @@ class MessageLookup extends MessageLookupByLibrary {
     "consultationChatCardTitle": MessageLookupByLibrary.simpleMessage(
       "Live Support",
     ),
+    "email": MessageLookupByLibrary.simpleMessage("Email"),
+    "enterEmail": MessageLookupByLibrary.simpleMessage("Enter your Email"),
+    "enterPassword": MessageLookupByLibrary.simpleMessage(
+      "Enter your password",
+    ),
     "feature1": MessageLookupByLibrary.simpleMessage("vitamins"),
     "feature2": MessageLookupByLibrary.simpleMessage("First Aid"),
     "feature3": MessageLookupByLibrary.simpleMessage("Daily Care"),
     "feature4": MessageLookupByLibrary.simpleMessage("Skin Care"),
+    "forgetPassword": MessageLookupByLibrary.simpleMessage("forgetPassword ?"),
+    "login": MessageLookupByLibrary.simpleMessage("login"),
     "nextButton": MessageLookupByLibrary.simpleMessage("Next"),
     "onBoardingScreen3Text1": MessageLookupByLibrary.simpleMessage(
       "Consult a Pharmacist",
@@ -83,6 +90,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "onboardingScreen2Text3": MessageLookupByLibrary.simpleMessage(
       "Search from over 10,000+ certified medications and healthcare products. Order in seconds and track your delivery.",
     ),
+    "password": MessageLookupByLibrary.simpleMessage("password"),
     "searchHint": MessageLookupByLibrary.simpleMessage("Search medications..."),
     "signInScreenText1": MessageLookupByLibrary.simpleMessage("Welcome Back"),
     "signInScreenText2": MessageLookupByLibrary.simpleMessage(
