@@ -4,6 +4,7 @@ import 'package:dawak/core/widgets/sqaure_icon.dart';
 import 'package:dawak/core/widgets/text_container.dart';
 import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SubscriptionCard extends StatelessWidget {
   const SubscriptionCard({super.key});
@@ -20,7 +21,7 @@ class SubscriptionCard extends StatelessWidget {
             Row(
               mainAxisAlignment: .spaceBetween,
               children: [
-                SqaureIcon(),
+                SqaureIcon(icon: FontAwesomeIcons.pills, dimensions: 50),
                 TextContainer(text: S.of(context).onBoardingScreen4Text7),
               ],
             ),

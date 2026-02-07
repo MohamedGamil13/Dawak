@@ -1,3 +1,4 @@
+import 'package:dawak/core/locator/service_locator.dart';
 import 'package:dawak/core/routing/app_router.dart';
 import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/generated/l10n.dart';
@@ -7,6 +8,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() async {
   await ScreenUtil.ensureScreenSize();
+  setupDependencies();
   runApp(Dawak());
 }
 
@@ -18,7 +20,7 @@ class Dawak extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(360, 690),
       child: MaterialApp.router(
-        locale: Locale('en'),
+        locale: Locale('ar'),
         localizationsDelegates: [
           S.delegate,
           GlobalMaterialLocalizations.delegate,
