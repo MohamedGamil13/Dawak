@@ -25,5 +25,8 @@
   "onBoardingScreen4Text6": " Set automatic reminders for your medications and subscribe to chronic care plans for seamless, doorstep refills. ",
   "onBoardingScreen4Text7": "Active Subscription",
   "onBoardingScreen4Text8": "Lisinopril 10mg",
-  "onBoardingScreen4Text9": "Daily, 8:00 AM"
+  "onBoardingScreen4Text9": "Daily, 8:00 AM",
+  "signInScreenTitle": "Sign In",
+  "signInScreenText1": "Welcome Back",
+  "signInScreenText2": "Access your prescriptions and pharmacist consultations"
 }

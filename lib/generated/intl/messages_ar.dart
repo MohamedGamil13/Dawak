@@ -82,6 +82,11 @@ class MessageLookup extends MessageLookupByLibrary {
       "ابحث من بين أكثر من 10,000 دواء ومنتج صحي معتمد. اطلب في ثوانٍ وتابع توصيل طلبك.",
     ),
     "searchHint": MessageLookupByLibrary.simpleMessage("ابحث عن الأدوية..."),
+    "signInScreenText1": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك"),
+    "signInScreenText2": MessageLookupByLibrary.simpleMessage(
+      "يمكنك الوصول إلى روشتاتك واستشارات الصيدلي",
+    ),
+    "signInScreenTitle": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "subTitle": MessageLookupByLibrary.simpleMessage(
       "اطلب أدويتك بسهولة واحصل على استشارات طبية احترافية مباشرة من هاتفك.",
     ),

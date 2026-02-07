@@ -84,6 +84,11 @@ class MessageLookup extends MessageLookupByLibrary {
       "Search from over 10,000+ certified medications and healthcare products. Order in seconds and track your delivery.",
     ),
     "searchHint": MessageLookupByLibrary.simpleMessage("Search medications..."),
+    "signInScreenText1": MessageLookupByLibrary.simpleMessage("Welcome Back"),
+    "signInScreenText2": MessageLookupByLibrary.simpleMessage(
+      "Access your prescriptions and pharmacist consultations",
+    ),
+    "signInScreenTitle": MessageLookupByLibrary.simpleMessage("Sign In"),
     "subTitle": MessageLookupByLibrary.simpleMessage(
       "Order your medications with ease and get professional medical consultations right from your pocket.",
     ),

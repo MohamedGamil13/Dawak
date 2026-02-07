@@ -25,5 +25,8 @@
   "onBoardingScreen4Text6": "قم بتعيين تذكيرات تلقائية لأدويتك واشترك في خطط الرعاية المزمنة لإعادة التعبئة بسهولة حتى باب منزلك.",
   "onBoardingScreen4Text7": "اشتراك نشط",
   "onBoardingScreen4Text8": "ليزينوبريل 10 مجم",
-  "onBoardingScreen4Text9": "يوميًا، 8:00 صباحًا"
+  "onBoardingScreen4Text9": "يوميًا، 8:00 صباحًا",
+  "signInScreenTitle": "تسجيل الدخول",
+  "signInScreenText1": "مرحبًا بعودتك",
+  "signInScreenText2": "يمكنك الوصول إلى روشتاتك واستشارات الصيدلي"
 }

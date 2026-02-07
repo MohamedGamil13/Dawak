@@ -298,6 +298,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Sign In`
+  String get signInScreenTitle {
+    return Intl.message(
+      'Sign In',
+      name: 'signInScreenTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome Back`
+  String get signInScreenText1 {
+    return Intl.message(
+      'Welcome Back',
+      name: 'signInScreenText1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Access your prescriptions and pharmacist consultations`
+  String get signInScreenText2 {
+    return Intl.message(
+      'Access your prescriptions and pharmacist consultations',
+      name: 'signInScreenText2',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
