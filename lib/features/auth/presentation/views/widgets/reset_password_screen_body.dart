@@ -4,6 +4,7 @@ import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/core/theme/styles/app_styles.dart';
 import 'package:dawak/core/widgets/custom_button.dart';
 import 'package:dawak/core/widgets/custom_textfeild.dart';
+import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -13,51 +14,62 @@ class ResetPasswordScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
-        crossAxisAlignment: .center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         spacing: 10,
         children: [
           SizedBox(height: 80.h),
-          const Text(
-            'Forget Password ? ',
+
+          Text(
+            s.forgetPasswordHeader,
             style: AppStyles.bold32black,
-            textAlign: .center,
+            textAlign: TextAlign.center,
           ),
-          const Text(
-            " Enter the email address associated with your account and we'll send you a link to reset your password",
+
+          Text(
+            s.forgetPasswordDescription,
             style: AppStyles.w500gray16,
-            textAlign: .center,
+            textAlign: TextAlign.center,
           ),
+
           SizedBox(height: 50.h),
-          const Align(
+
+          Align(
             alignment: AlignmentDirectional.centerStart,
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 8.0),
-              child: Text('Email Address', style: AppStyles.w500black10),
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: Text(s.emailAddress, style: AppStyles.w500black10),
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8.0),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: CustomTextfield(
               icon: Icons.email,
-              hint: 'Enter yor Email To reset your Password',
+              hint: s.enterEmailToReset,
               hintColor: AppColors.darkGreen,
             ),
           ),
+
           SizedBox(height: 5.h),
-          CustomButton(onPressed: () {}, text: 'Send Reset Link'),
+
+          CustomButton(onPressed: () {}, text: s.sendResetLink),
+
           SizedBox(height: 5.h),
+
           Text.rich(
             TextSpan(
-              children: <TextSpan>[
-                const TextSpan(
-                  text: 'Remebar Your Password ? ',
+              children: [
+                TextSpan(
+                  text: "${s.rememberPassword} ",
                   style: AppStyles.w500gray18,
                 ),
                 TextSpan(
-                  text: 'Log In',
+                  text: s.login,
                   style: AppStyles.w500green18,
                   recognizer: TapGestureRecognizer()
                     ..onTap = () {

@@ -478,6 +478,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Reset Password`
+  String get resetPasswordTitle {
+    return Intl.message(
+      'Reset Password',
+      name: 'resetPasswordTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forgot Password?`
+  String get forgetPasswordHeader {
+    return Intl.message(
+      'Forgot Password?',
+      name: 'forgetPasswordHeader',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter the email address associated with your account and we'll send you a link to reset your password`
+  String get forgetPasswordDescription {
+    return Intl.message(
+      'Enter the email address associated with your account and we\'ll send you a link to reset your password',
+      name: 'forgetPasswordDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your email to reset your password`
+  String get enterEmailToReset {
+    return Intl.message(
+      'Enter your email to reset your password',
+      name: 'enterEmailToReset',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Send Reset Link`
+  String get sendResetLink {
+    return Intl.message(
+      'Send Reset Link',
+      name: 'sendResetLink',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Remember your password?`
+  String get rememberPassword {
+    return Intl.message(
+      'Remember your password?',
+      name: 'rememberPassword',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

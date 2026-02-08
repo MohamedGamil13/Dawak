@@ -45,6 +45,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterEmailExample": MessageLookupByLibrary.simpleMessage(
       "ادخل بريدك الإلكتروني",
     ),
+    "enterEmailToReset": MessageLookupByLibrary.simpleMessage(
+      "أدخل بريدك الإلكتروني لإعادة تعيين كلمة المرور",
+    ),
     "enterName": MessageLookupByLibrary.simpleMessage("أدخل اسمك"),
     "enterPassword": MessageLookupByLibrary.simpleMessage("أدخل كلمة المرور"),
     "enterPhone": MessageLookupByLibrary.simpleMessage("(+20) 01102535450"),
@@ -53,6 +56,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "feature3": MessageLookupByLibrary.simpleMessage("العناية اليومية"),
     "feature4": MessageLookupByLibrary.simpleMessage("العناية بالبشرة"),
     "forgetPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
+    "forgetPasswordDescription": MessageLookupByLibrary.simpleMessage(
+      "أدخل البريد الإلكتروني المرتبط بحسابك وسنرسل لك رابطًا لإعادة تعيين كلمة المرور",
+    ),
+    "forgetPasswordHeader": MessageLookupByLibrary.simpleMessage(
+      "هل نسيت كلمة المرور؟",
+    ),
     "fullName": MessageLookupByLibrary.simpleMessage("الاسم بالكامل"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "nextButton": MessageLookupByLibrary.simpleMessage("التالي"),
@@ -101,7 +110,16 @@ class MessageLookup extends MessageLookupByLibrary {
     "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
     "phoneNumber": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
     "register": MessageLookupByLibrary.simpleMessage("سجل الدخول"),
+    "rememberPassword": MessageLookupByLibrary.simpleMessage(
+      "تتذكر كلمة المرور؟",
+    ),
+    "resetPasswordTitle": MessageLookupByLibrary.simpleMessage(
+      "إعادة تعيين كلمة المرور",
+    ),
     "searchHint": MessageLookupByLibrary.simpleMessage("ابحث عن الأدوية..."),
+    "sendResetLink": MessageLookupByLibrary.simpleMessage(
+      "إرسال رابط إعادة التعيين",
+    ),
     "signInScreenText1": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك"),
     "signInScreenText2": MessageLookupByLibrary.simpleMessage(
       "يمكنك الوصول إلى روشتاتك واستشارات الصيدلي",

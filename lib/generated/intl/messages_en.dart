@@ -47,6 +47,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterEmailExample": MessageLookupByLibrary.simpleMessage(
       "example@email.com",
     ),
+    "enterEmailToReset": MessageLookupByLibrary.simpleMessage(
+      "Enter your email to reset your password",
+    ),
     "enterName": MessageLookupByLibrary.simpleMessage("Enter Your Name"),
     "enterPassword": MessageLookupByLibrary.simpleMessage(
       "Enter your password",
@@ -57,6 +60,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "feature3": MessageLookupByLibrary.simpleMessage("Daily Care"),
     "feature4": MessageLookupByLibrary.simpleMessage("Skin Care"),
     "forgetPassword": MessageLookupByLibrary.simpleMessage("ForgetPassword ?"),
+    "forgetPasswordDescription": MessageLookupByLibrary.simpleMessage(
+      "Enter the email address associated with your account and we\'ll send you a link to reset your password",
+    ),
+    "forgetPasswordHeader": MessageLookupByLibrary.simpleMessage(
+      "Forgot Password?",
+    ),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
     "login": MessageLookupByLibrary.simpleMessage("login"),
     "nextButton": MessageLookupByLibrary.simpleMessage("Next"),
@@ -107,7 +116,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "password": MessageLookupByLibrary.simpleMessage("Password"),
     "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
     "register": MessageLookupByLibrary.simpleMessage("Register"),
+    "rememberPassword": MessageLookupByLibrary.simpleMessage(
+      "Remember your password?",
+    ),
+    "resetPasswordTitle": MessageLookupByLibrary.simpleMessage(
+      "Reset Password",
+    ),
     "searchHint": MessageLookupByLibrary.simpleMessage("Search medications..."),
+    "sendResetLink": MessageLookupByLibrary.simpleMessage("Send Reset Link"),
     "signInScreenText1": MessageLookupByLibrary.simpleMessage("Welcome Back"),
     "signInScreenText2": MessageLookupByLibrary.simpleMessage(
       "Access your prescriptions and pharmacist consultations",

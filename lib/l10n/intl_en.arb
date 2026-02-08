@@ -46,5 +46,11 @@
   "createAccount": "Create Account",
   "register": "Register",
   "chronicCondition": "I have a chronic condition",
-  "chronicConditionSubtitle": "This helps us personalize your pharmacy experience and reminders"
+  "chronicConditionSubtitle": "This helps us personalize your pharmacy experience and reminders",
+  "resetPasswordTitle": "Reset Password",
+  "forgetPasswordHeader": "Forgot Password?",
+  "forgetPasswordDescription": "Enter the email address associated with your account and we'll send you a link to reset your password",
+  "enterEmailToReset": "Enter your email to reset your password",
+  "sendResetLink": "Send Reset Link",
+  "rememberPassword": "Remember your password?"
 }

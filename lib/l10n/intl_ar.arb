@@ -39,12 +39,19 @@
   "signUpSubtitle": "انضم إلى مجتمعنا للحصول على توصيل أسرع للأدوية واستشارات طبية متخصصة",
   "fullName": "الاسم بالكامل",
   "enterName": "أدخل اسمك",
-  "emailAddress": "البريد الإلكتروني",
   "enterEmailExample": "ادخل بريدك الإلكتروني",
   "phoneNumber": "رقم الهاتف",
   "enterPhone": "(+20) 01102535450",
   "createAccount": "إنشاء حساب",
   "register": "سجل الدخول",
   "chronicCondition": "لدي حالة مزمنة",
-  "chronicConditionSubtitle": "هذا يساعدنا على تخصيص تجربة الصيدلية والتذكيرات الخاصة بك"
-}
+  "chronicConditionSubtitle": "هذا يساعدنا على تخصيص تجربة الصيدلية والتذكيرات الخاصة بك",
+    "resetPasswordTitle": "إعادة تعيين كلمة المرور",
+  "forgetPasswordHeader": "هل نسيت كلمة المرور؟",
+  "forgetPasswordDescription": "أدخل البريد الإلكتروني المرتبط بحسابك وسنرسل لك رابطًا لإعادة تعيين كلمة المرور",
+  "emailAddress": "البريد الإلكتروني",
+  "enterEmailToReset": "أدخل بريدك الإلكتروني لإعادة تعيين كلمة المرور",
+    "sendResetLink": "إرسال رابط إعادة التعيين",
+    "rememberPassword": "تتذكر كلمة المرور؟"
+  }
+
