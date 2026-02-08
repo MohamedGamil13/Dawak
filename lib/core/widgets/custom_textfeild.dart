@@ -2,10 +2,15 @@ import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextfield extends StatelessWidget {
-  const CustomTextfield({super.key, required this.hint, required this.icon});
+  const CustomTextfield({
+    super.key,
+    required this.hint,
+    this.icon,
+    this.hintColor,
+  });
   final String hint;
-  final IconData icon;
-
+  final IconData? icon;
+  final Color? hintColor;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -30,7 +35,10 @@ class CustomTextfield extends StatelessWidget {
           borderSide: const BorderSide(color: AppColors.redError),
         ),
         hintText: hint,
-        prefixIcon: Icon(icon, color: AppColors.darkGreen),
+        hintStyle: TextStyle(color: hintColor),
+        prefixIcon: icon != null
+            ? Icon(icon, color: AppColors.darkGreen)
+            : null,
       ),
     );
   }

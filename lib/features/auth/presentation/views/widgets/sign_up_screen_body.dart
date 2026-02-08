@@ -1,4 +1,6 @@
+import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/core/theme/styles/app_styles.dart';
+import 'package:dawak/core/widgets/custom_checkbox.dart';
 import 'package:dawak/core/widgets/custom_textfeild.dart';
 import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -18,19 +20,29 @@ class SignUpScreenBody extends StatelessWidget {
           Text(S.of(context).signUpSubtitle, style: AppStyles.w500green20),
 
           Text(S.of(context).fullName, style: AppStyles.w500black10),
-          CustomTextfield(hint: S.of(context).enterName, icon: Icons.person),
+          CustomTextfield(
+            hint: S.of(context).enterName,
+            hintColor: AppColors.darkGreen,
+          ),
 
           Text(S.of(context).emailAddress, style: AppStyles.w500black10),
           CustomTextfield(
             hint: S.of(context).enterEmailExample,
-            icon: Icons.email,
+            hintColor: AppColors.darkGreen,
           ),
 
           Text(S.of(context).phoneNumber, style: AppStyles.w500black10),
-          CustomTextfield(hint: S.of(context).enterPhone, icon: Icons.phone),
+          CustomTextfield(
+            hint: S.of(context).enterPhone,
+            hintColor: AppColors.darkGreen,
+          ),
 
           Text(S.of(context).password, style: AppStyles.w500black10),
-          CustomTextfield(hint: S.of(context).enterPassword, icon: Icons.lock),
+          CustomTextfield(
+            hint: S.of(context).enterPassword,
+            hintColor: AppColors.darkGreen,
+          ),
+          const Align(child: CustomCheckbox()),
         ],
       ),
     );
