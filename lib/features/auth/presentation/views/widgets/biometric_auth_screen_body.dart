@@ -3,6 +3,7 @@ import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/core/theme/styles/app_styles.dart';
 import 'package:dawak/core/widgets/custom_button.dart';
 import 'package:dawak/core/widgets/image_container.dart';
+import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -11,24 +12,32 @@ class BiometricAuthScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
         spacing: 20,
         children: [
           SizedBox(height: 50.h),
+
           const ImageContainer(height: 80, imagePath: AppImages.biometricGIF),
-          const Text('Unlock with Biometric', style: AppStyles.bold32black),
-          const Text(
-            'Quickly and securely access your prescriptions, medical records, and pharmacist consultations',
+
+          Text(s.biometricTitle, style: AppStyles.bold32black),
+
+          Text(
+            s.biometricDescription,
             style: AppStyles.w500gray16,
-            textAlign: .center,
+            textAlign: TextAlign.center,
           ),
+
           const SizedBox(height: 50),
-          CustomButton(onPressed: () {}, text: 'Enable FaceID'),
+
+          CustomButton(onPressed: () {}, text: s.enableFaceId),
+
           CustomButton(
             onPressed: () {},
-            text: 'Use Password Instead',
+            text: s.usePasswordInstead,
             buttonColor: AppColors.scaffoldColor,
             textColor: AppColors.graySubtitle,
           ),

@@ -22,6 +22,12 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "biometricDescription": MessageLookupByLibrary.simpleMessage(
+      "Quickly and securely access your prescriptions, medical records, and pharmacist consultations",
+    ),
+    "biometricTitle": MessageLookupByLibrary.simpleMessage(
+      "Unlock with Biometric",
+    ),
     "chronicCondition": MessageLookupByLibrary.simpleMessage(
       "I have a chronic condition",
     ),
@@ -43,6 +49,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
     "emailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
+    "enableFaceId": MessageLookupByLibrary.simpleMessage("Enable Face ID"),
     "enterEmail": MessageLookupByLibrary.simpleMessage("Enter your Email"),
     "enterEmailExample": MessageLookupByLibrary.simpleMessage(
       "example@email.com",
@@ -123,6 +130,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Reset Password",
     ),
     "searchHint": MessageLookupByLibrary.simpleMessage("Search medications..."),
+    "security": MessageLookupByLibrary.simpleMessage("Security"),
     "sendResetLink": MessageLookupByLibrary.simpleMessage("Send Reset Link"),
     "signInScreenText1": MessageLookupByLibrary.simpleMessage("Welcome Back"),
     "signInScreenText2": MessageLookupByLibrary.simpleMessage(
@@ -135,6 +143,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "signUpTitle": MessageLookupByLibrary.simpleMessage("Get Started"),
     "subTitle": MessageLookupByLibrary.simpleMessage(
       "Order your medications with ease and get professional medical consultations right from your pocket.",
+    ),
+    "usePasswordInstead": MessageLookupByLibrary.simpleMessage(
+      "Use Password Instead",
     ),
   };
 }

@@ -1,5 +1,6 @@
 import 'package:dawak/core/theme/styles/app_styles.dart';
 import 'package:dawak/features/auth/presentation/views/widgets/biometric_auth_screen_body.dart';
+import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class BiometricAuthScreen extends StatelessWidget {
@@ -7,9 +8,11 @@ class BiometricAuthScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Security', style: AppStyles.bold24black),
+        title: Text(s.security, style: AppStyles.bold24black),
         centerTitle: true,
       ),
       body: const BiometricAuthScreenBody(),

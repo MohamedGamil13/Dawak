@@ -52,5 +52,10 @@
   "forgetPasswordDescription": "Enter the email address associated with your account and we'll send you a link to reset your password",
   "enterEmailToReset": "Enter your email to reset your password",
   "sendResetLink": "Send Reset Link",
-  "rememberPassword": "Remember your password?"
+  "rememberPassword": "Remember your password?",
+  "biometricTitle": "Unlock with Biometric",
+  "biometricDescription": "Quickly and securely access your prescriptions, medical records, and pharmacist consultations",
+  "enableFaceId": "Enable Face ID",
+  "usePasswordInstead": "Use Password Instead",
+  "security": "Security"
 }

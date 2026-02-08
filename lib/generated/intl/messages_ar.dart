@@ -22,6 +22,12 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "biometricDescription": MessageLookupByLibrary.simpleMessage(
+      "يمكنك الوصول بسرعة وأمان إلى وصفاتك الطبية وسجلاتك الصحية واستشارات الصيدلي",
+    ),
+    "biometricTitle": MessageLookupByLibrary.simpleMessage(
+      "فتح باستخدام البصمة الحيوية",
+    ),
     "chronicCondition": MessageLookupByLibrary.simpleMessage("لدي حالة مزمنة"),
     "chronicConditionSubtitle": MessageLookupByLibrary.simpleMessage(
       "هذا يساعدنا على تخصيص تجربة الصيدلية والتذكيرات الخاصة بك",
@@ -41,6 +47,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "createAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
     "emailAddress": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+    "enableFaceId": MessageLookupByLibrary.simpleMessage("تفعيل بصمة الوجه"),
     "enterEmail": MessageLookupByLibrary.simpleMessage("أدخل بريدك الإلكتروني"),
     "enterEmailExample": MessageLookupByLibrary.simpleMessage(
       "ادخل بريدك الإلكتروني",
@@ -117,6 +124,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "إعادة تعيين كلمة المرور",
     ),
     "searchHint": MessageLookupByLibrary.simpleMessage("ابحث عن الأدوية..."),
+    "security": MessageLookupByLibrary.simpleMessage("الأمان"),
     "sendResetLink": MessageLookupByLibrary.simpleMessage(
       "إرسال رابط إعادة التعيين",
     ),
@@ -131,6 +139,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "signUpTitle": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
     "subTitle": MessageLookupByLibrary.simpleMessage(
       "اطلب أدويتك بسهولة واحصل على استشارات طبية احترافية مباشرة من هاتفك.",
+    ),
+    "usePasswordInstead": MessageLookupByLibrary.simpleMessage(
+      "استخدام كلمة المرور بدلاً من ذلك",
     ),
   };
 }

@@ -46,12 +46,16 @@
   "register": "سجل الدخول",
   "chronicCondition": "لدي حالة مزمنة",
   "chronicConditionSubtitle": "هذا يساعدنا على تخصيص تجربة الصيدلية والتذكيرات الخاصة بك",
-    "resetPasswordTitle": "إعادة تعيين كلمة المرور",
+  "resetPasswordTitle": "إعادة تعيين كلمة المرور",
   "forgetPasswordHeader": "هل نسيت كلمة المرور؟",
   "forgetPasswordDescription": "أدخل البريد الإلكتروني المرتبط بحسابك وسنرسل لك رابطًا لإعادة تعيين كلمة المرور",
   "emailAddress": "البريد الإلكتروني",
   "enterEmailToReset": "أدخل بريدك الإلكتروني لإعادة تعيين كلمة المرور",
-    "sendResetLink": "إرسال رابط إعادة التعيين",
-    "rememberPassword": "تتذكر كلمة المرور؟"
-  }
-
+  "sendResetLink": "إرسال رابط إعادة التعيين",
+  "rememberPassword": "تتذكر كلمة المرور؟",
+  "biometricTitle": "فتح باستخدام البصمة الحيوية",
+  "biometricDescription": "يمكنك الوصول بسرعة وأمان إلى وصفاتك الطبية وسجلاتك الصحية واستشارات الصيدلي",
+  "enableFaceId": "تفعيل بصمة الوجه",
+  "usePasswordInstead": "استخدام كلمة المرور بدلاً من ذلك",
+  "security": "الأمان"
+}

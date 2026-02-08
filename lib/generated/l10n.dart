@@ -538,6 +538,51 @@ class S {
       args: [],
     );
   }
+
+  /// `Unlock with Biometric`
+  String get biometricTitle {
+    return Intl.message(
+      'Unlock with Biometric',
+      name: 'biometricTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quickly and securely access your prescriptions, medical records, and pharmacist consultations`
+  String get biometricDescription {
+    return Intl.message(
+      'Quickly and securely access your prescriptions, medical records, and pharmacist consultations',
+      name: 'biometricDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enable Face ID`
+  String get enableFaceId {
+    return Intl.message(
+      'Enable Face ID',
+      name: 'enableFaceId',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Use Password Instead`
+  String get usePasswordInstead {
+    return Intl.message(
+      'Use Password Instead',
+      name: 'usePasswordInstead',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Security`
+  String get security {
+    return Intl.message('Security', name: 'security', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
