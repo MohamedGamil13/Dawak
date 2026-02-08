@@ -1,5 +1,6 @@
 import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/core/theme/styles/app_styles.dart';
+import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class CustomCheckbox extends StatefulWidget {
@@ -25,9 +26,9 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
           ismarked = value!;
         });
       },
-      title: const Text("I have a chronic condition"),
-      subtitle: const Text(
-        'This helps us personalize your pharmacy experience and reminders',
+      title: Text(S.of(context).chronicCondition),
+      subtitle: Text(
+        S.of(context).chronicConditionSubtitle,
         style: AppStyles.w500green12,
       ),
       controlAffinity: .leading,

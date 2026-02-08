@@ -46,7 +46,7 @@ class SignUpScreenBody extends StatelessWidget {
             hintColor: AppColors.darkGreen,
           ),
           const CustomCheckbox(),
-          CustomButton(onPressed: () {}, text: 'Register'),
+          CustomButton(onPressed: () {}, text: S.of(context).register),
           const SizedBox(height: 5),
           const CustomDivider(divideText: 'OR'),
           const SignInMathodsRow(),

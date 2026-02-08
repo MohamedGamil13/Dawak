@@ -17,7 +17,7 @@ class OnboardingBody extends StatelessWidget {
         child: Consumer<PageViewProvider>(
           builder: (BuildContext context, value, Widget? child) {
             return PageView(
-              // physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               controller: value.pageController,
               onPageChanged: (index) {
                 value.updatePageIndex(index);

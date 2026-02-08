@@ -1,6 +1,6 @@
 import 'package:dawak/core/widgets/custom_button.dart';
-import 'package:dawak/core/widgets/custom_page_indicator.dart';
 import 'package:dawak/features/onboarding/presentation/ViewModel/page_view_provider.dart';
+import 'package:dawak/features/onboarding/presentation/widgets/custom_page_indicator.dart';
 import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

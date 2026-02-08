@@ -453,6 +453,31 @@ class S {
       args: [],
     );
   }
+
+  /// `Register`
+  String get register {
+    return Intl.message('Register', name: 'register', desc: '', args: []);
+  }
+
+  /// `I have a chronic condition`
+  String get chronicCondition {
+    return Intl.message(
+      'I have a chronic condition',
+      name: 'chronicCondition',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This helps us personalize your pharmacy experience and reminders`
+  String get chronicConditionSubtitle {
+    return Intl.message(
+      'This helps us personalize your pharmacy experience and reminders',
+      name: 'chronicConditionSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

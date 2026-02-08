@@ -43,5 +43,8 @@
   "enterEmailExample": "ادخل بريدك الإلكتروني",
   "phoneNumber": "رقم الهاتف",
   "enterPhone": "(+20) 01102535450",
-  "createAccount": "إنشاء حساب"
+  "createAccount": "إنشاء حساب",
+  "register": "سجل الدخول",
+  "chronicCondition": "لدي حالة مزمنة",
+  "chronicConditionSubtitle": "هذا يساعدنا على تخصيص تجربة الصيدلية والتذكيرات الخاصة بك"
 }

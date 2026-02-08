@@ -43,5 +43,8 @@
   "enterEmailExample": "example@email.com",
   "phoneNumber": "Phone Number",
   "enterPhone": "(+20) 01102535450",
-  "createAccount": "Create Account"
+  "createAccount": "Create Account",
+  "register": "Register",
+  "chronicCondition": "I have a chronic condition",
+  "chronicConditionSubtitle": "This helps us personalize your pharmacy experience and reminders"
 }

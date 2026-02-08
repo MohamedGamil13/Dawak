@@ -22,6 +22,10 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "chronicCondition": MessageLookupByLibrary.simpleMessage("لدي حالة مزمنة"),
+    "chronicConditionSubtitle": MessageLookupByLibrary.simpleMessage(
+      "هذا يساعدنا على تخصيص تجربة الصيدلية والتذكيرات الخاصة بك",
+    ),
     "consultationChatCardChatMessage": MessageLookupByLibrary.simpleMessage(
       "مرحبًا! كيف يمكنني مساعدتك اليوم؟",
     ),
@@ -96,6 +100,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
     "phoneNumber": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
+    "register": MessageLookupByLibrary.simpleMessage("سجل الدخول"),
     "searchHint": MessageLookupByLibrary.simpleMessage("ابحث عن الأدوية..."),
     "signInScreenText1": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك"),
     "signInScreenText2": MessageLookupByLibrary.simpleMessage(
