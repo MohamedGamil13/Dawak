@@ -14,6 +14,10 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
   @override
   Widget build(BuildContext context) {
     return CheckboxListTile(
+      checkboxShape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(4),
+      ),
+      side: const BorderSide(color: AppColors.graySubtitle, width: 1),
       activeColor: AppColors.primaryColor,
       value: ismarked,
       onChanged: (value) {

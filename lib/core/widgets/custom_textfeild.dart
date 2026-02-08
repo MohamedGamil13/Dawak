@@ -15,6 +15,10 @@ class CustomTextfield extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       decoration: InputDecoration(
+        filled: true,
+        fillColor: AppColors.white,
+        focusColor: AppColors.white,
+        hoverColor: AppColors.white,
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
           borderSide: const BorderSide(color: AppColors.grayborder, width: 2),

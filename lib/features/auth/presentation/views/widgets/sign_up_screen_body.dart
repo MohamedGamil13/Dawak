@@ -1,7 +1,10 @@
 import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/core/theme/styles/app_styles.dart';
-import 'package:dawak/core/widgets/custom_checkbox.dart';
+import 'package:dawak/core/widgets/custom_button.dart';
 import 'package:dawak/core/widgets/custom_textfeild.dart';
+import 'package:dawak/features/auth/presentation/views/widgets/custom_checkbox.dart';
+import 'package:dawak/features/auth/presentation/views/widgets/custom_divider.dart';
+import 'package:dawak/features/auth/presentation/views/widgets/sign_in_mathods_row.dart';
 import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
@@ -42,7 +45,11 @@ class SignUpScreenBody extends StatelessWidget {
             hint: S.of(context).enterPassword,
             hintColor: AppColors.darkGreen,
           ),
-          const Align(child: CustomCheckbox()),
+          const CustomCheckbox(),
+          CustomButton(onPressed: () {}, text: 'Register'),
+          const SizedBox(height: 5),
+          const CustomDivider(divideText: 'OR'),
+          const SignInMathodsRow(),
         ],
       ),
     );
