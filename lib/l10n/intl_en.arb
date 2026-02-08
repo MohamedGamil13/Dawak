@@ -31,8 +31,17 @@
   "signInScreenText2": "Access your prescriptions and pharmacist consultations",
   "email": "Email",
   "enterEmail": "Enter your Email",
-  "password": "password",
+  "password": "Password",
   "enterPassword": "Enter your password",
-  "forgetPassword": "forgetPassword ?",
-  "login": "login"
+  "forgetPassword": "ForgetPassword ?",
+  "login": "login",
+  "signUpTitle": "Get Started",
+  "signUpSubtitle": "Join our community for faster medicine delivery and expert consultation",
+  "fullName": "Full Name",
+  "enterName": "Enter Your Name",
+  "emailAddress": "Email Address",
+  "enterEmailExample": "example@email.com",
+  "phoneNumber": "Phone Number",
+  "enterPhone": "(+20) 01102535450",
+  "createAccount": "Create Account"
 }

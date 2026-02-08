@@ -344,9 +344,9 @@ class S {
     );
   }
 
-  /// `password`
+  /// `Password`
   String get password {
-    return Intl.message('password', name: 'password', desc: '', args: []);
+    return Intl.message('Password', name: 'password', desc: '', args: []);
   }
 
   /// `Enter your password`
@@ -359,10 +359,10 @@ class S {
     );
   }
 
-  /// `forgetPassword ?`
+  /// `ForgetPassword ?`
   String get forgetPassword {
     return Intl.message(
-      'forgetPassword ?',
+      'ForgetPassword ?',
       name: 'forgetPassword',
       desc: '',
       args: [],
@@ -372,6 +372,86 @@ class S {
   /// `login`
   String get login {
     return Intl.message('login', name: 'login', desc: '', args: []);
+  }
+
+  /// `Get Started`
+  String get signUpTitle {
+    return Intl.message('Get Started', name: 'signUpTitle', desc: '', args: []);
+  }
+
+  /// `Join our community for faster medicine delivery and expert consultation`
+  String get signUpSubtitle {
+    return Intl.message(
+      'Join our community for faster medicine delivery and expert consultation',
+      name: 'signUpSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Full Name`
+  String get fullName {
+    return Intl.message('Full Name', name: 'fullName', desc: '', args: []);
+  }
+
+  /// `Enter Your Name`
+  String get enterName {
+    return Intl.message(
+      'Enter Your Name',
+      name: 'enterName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email Address`
+  String get emailAddress {
+    return Intl.message(
+      'Email Address',
+      name: 'emailAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `example@email.com`
+  String get enterEmailExample {
+    return Intl.message(
+      'example@email.com',
+      name: 'enterEmailExample',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone Number`
+  String get phoneNumber {
+    return Intl.message(
+      'Phone Number',
+      name: 'phoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `(+20) 01102535450`
+  String get enterPhone {
+    return Intl.message(
+      '(+20) 01102535450',
+      name: 'enterPhone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create Account`
+  String get createAccount {
+    return Intl.message(
+      'Create Account',
+      name: 'createAccount',
+      desc: '',
+      args: [],
+    );
   }
 }
 

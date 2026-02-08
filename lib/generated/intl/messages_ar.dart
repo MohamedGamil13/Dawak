@@ -34,14 +34,22 @@ class MessageLookup extends MessageLookupByLibrary {
     "consultationChatCardTitle": MessageLookupByLibrary.simpleMessage(
       "دعم مباشر",
     ),
+    "createAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+    "emailAddress": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
     "enterEmail": MessageLookupByLibrary.simpleMessage("أدخل بريدك الإلكتروني"),
+    "enterEmailExample": MessageLookupByLibrary.simpleMessage(
+      "ادخل بريدك الإلكتروني",
+    ),
+    "enterName": MessageLookupByLibrary.simpleMessage("أدخل اسمك"),
     "enterPassword": MessageLookupByLibrary.simpleMessage("أدخل كلمة المرور"),
+    "enterPhone": MessageLookupByLibrary.simpleMessage("(+20) 01102535450"),
     "feature1": MessageLookupByLibrary.simpleMessage("الفيتامينات"),
     "feature2": MessageLookupByLibrary.simpleMessage("الإسعافات الأولية"),
     "feature3": MessageLookupByLibrary.simpleMessage("العناية اليومية"),
     "feature4": MessageLookupByLibrary.simpleMessage("العناية بالبشرة"),
     "forgetPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
+    "fullName": MessageLookupByLibrary.simpleMessage("الاسم بالكامل"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "nextButton": MessageLookupByLibrary.simpleMessage("التالي"),
     "onBoardingScreen3Text1": MessageLookupByLibrary.simpleMessage(
@@ -87,12 +95,17 @@ class MessageLookup extends MessageLookupByLibrary {
       "ابحث من بين أكثر من 10,000 دواء ومنتج صحي معتمد. اطلب في ثوانٍ وتابع توصيل طلبك.",
     ),
     "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+    "phoneNumber": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
     "searchHint": MessageLookupByLibrary.simpleMessage("ابحث عن الأدوية..."),
     "signInScreenText1": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك"),
     "signInScreenText2": MessageLookupByLibrary.simpleMessage(
       "يمكنك الوصول إلى روشتاتك واستشارات الصيدلي",
     ),
     "signInScreenTitle": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+    "signUpSubtitle": MessageLookupByLibrary.simpleMessage(
+      "انضم إلى مجتمعنا للحصول على توصيل أسرع للأدوية واستشارات طبية متخصصة",
+    ),
+    "signUpTitle": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
     "subTitle": MessageLookupByLibrary.simpleMessage(
       "اطلب أدويتك بسهولة واحصل على استشارات طبية احترافية مباشرة من هاتفك.",
     ),

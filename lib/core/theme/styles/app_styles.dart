@@ -19,4 +19,9 @@ abstract class AppStyles {
     fontSize: 24,
     fontWeight: .bold,
   );
+  static const TextStyle w500green20 = TextStyle(
+    fontSize: 20,
+    fontWeight: .w500,
+    color: AppColors.darkGreen,
+  );
 }

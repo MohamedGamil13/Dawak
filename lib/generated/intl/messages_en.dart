@@ -34,16 +34,24 @@ class MessageLookup extends MessageLookupByLibrary {
     "consultationChatCardTitle": MessageLookupByLibrary.simpleMessage(
       "Live Support",
     ),
+    "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
+    "emailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
     "enterEmail": MessageLookupByLibrary.simpleMessage("Enter your Email"),
+    "enterEmailExample": MessageLookupByLibrary.simpleMessage(
+      "example@email.com",
+    ),
+    "enterName": MessageLookupByLibrary.simpleMessage("Enter Your Name"),
     "enterPassword": MessageLookupByLibrary.simpleMessage(
       "Enter your password",
     ),
+    "enterPhone": MessageLookupByLibrary.simpleMessage("(+20) 01102535450"),
     "feature1": MessageLookupByLibrary.simpleMessage("vitamins"),
     "feature2": MessageLookupByLibrary.simpleMessage("First Aid"),
     "feature3": MessageLookupByLibrary.simpleMessage("Daily Care"),
     "feature4": MessageLookupByLibrary.simpleMessage("Skin Care"),
-    "forgetPassword": MessageLookupByLibrary.simpleMessage("forgetPassword ?"),
+    "forgetPassword": MessageLookupByLibrary.simpleMessage("ForgetPassword ?"),
+    "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
     "login": MessageLookupByLibrary.simpleMessage("login"),
     "nextButton": MessageLookupByLibrary.simpleMessage("Next"),
     "onBoardingScreen3Text1": MessageLookupByLibrary.simpleMessage(
@@ -90,13 +98,18 @@ class MessageLookup extends MessageLookupByLibrary {
     "onboardingScreen2Text3": MessageLookupByLibrary.simpleMessage(
       "Search from over 10,000+ certified medications and healthcare products. Order in seconds and track your delivery.",
     ),
-    "password": MessageLookupByLibrary.simpleMessage("password"),
+    "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
     "searchHint": MessageLookupByLibrary.simpleMessage("Search medications..."),
     "signInScreenText1": MessageLookupByLibrary.simpleMessage("Welcome Back"),
     "signInScreenText2": MessageLookupByLibrary.simpleMessage(
       "Access your prescriptions and pharmacist consultations",
     ),
     "signInScreenTitle": MessageLookupByLibrary.simpleMessage("Sign In"),
+    "signUpSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Join our community for faster medicine delivery and expert consultation",
+    ),
+    "signUpTitle": MessageLookupByLibrary.simpleMessage("Get Started"),
     "subTitle": MessageLookupByLibrary.simpleMessage(
       "Order your medications with ease and get professional medical consultations right from your pocket.",
     ),

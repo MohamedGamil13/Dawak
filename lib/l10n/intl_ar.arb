@@ -34,5 +34,14 @@
   "password": "كلمة المرور",
   "enterPassword": "أدخل كلمة المرور",
   "forgetPassword": "نسيت كلمة المرور؟",
-  "login": "تسجيل الدخول"
+  "login": "تسجيل الدخول",
+  "signUpTitle": "ابدأ الآن",
+  "signUpSubtitle": "انضم إلى مجتمعنا للحصول على توصيل أسرع للأدوية واستشارات طبية متخصصة",
+  "fullName": "الاسم بالكامل",
+  "enterName": "أدخل اسمك",
+  "emailAddress": "البريد الإلكتروني",
+  "enterEmailExample": "ادخل بريدك الإلكتروني",
+  "phoneNumber": "رقم الهاتف",
+  "enterPhone": "(+20) 01102535450",
+  "createAccount": "إنشاء حساب"
 }
