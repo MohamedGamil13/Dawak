@@ -1,4 +1,5 @@
 import 'package:dawak/core/routing/app_screens.dart';
+import 'package:dawak/features/auth/presentation/views/biometric_auth_screen.dart';
 import 'package:dawak/features/auth/presentation/views/forget_password_screen.dart';
 import 'package:dawak/features/auth/presentation/views/sign_in_screen.dart';
 import 'package:dawak/features/auth/presentation/views/sign_up_screen.dart';
@@ -36,6 +37,12 @@ final GoRouter router = GoRouter(
       path: AppScreens.forgetPasswordScreen,
       builder: (BuildContext context, GoRouterState state) {
         return const ForgetPasswordScreen();
+      },
+    ),
+    GoRoute(
+      path: AppScreens.biometricScreen,
+      builder: (BuildContext context, GoRouterState state) {
+        return const BiometricAuthScreen();
       },
     ),
   ],

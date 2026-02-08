@@ -10,4 +10,5 @@ class AppNavigator {
   void goHome() => _appRouter.go(AppScreens.homeScreen);
   void goSignUp() => _appRouter.go(AppScreens.signUpScreen);
   void goForgetPassword() => _appRouter.go(AppScreens.forgetPasswordScreen);
+  void goBiometric() => _appRouter.go(AppScreens.biometricScreen);
 }
