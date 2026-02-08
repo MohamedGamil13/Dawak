@@ -69,7 +69,9 @@ class SignInScreenBody extends StatelessWidget {
               ),
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                serviceLocator<AppNavigator>().goForgetPassword();
+              },
               style: TextButton.styleFrom(foregroundColor: AppColors.green),
               child: Align(
                 alignment: AlignmentDirectional.centerEnd,

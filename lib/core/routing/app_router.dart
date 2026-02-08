@@ -1,4 +1,5 @@
 import 'package:dawak/core/routing/app_screens.dart';
+import 'package:dawak/features/auth/presentation/views/forget_password_screen.dart';
 import 'package:dawak/features/auth/presentation/views/sign_in_screen.dart';
 import 'package:dawak/features/auth/presentation/views/sign_up_screen.dart';
 import 'package:dawak/features/onboarding/presentation/screens/onboarding_screen.dart';
@@ -29,6 +30,12 @@ final GoRouter router = GoRouter(
       path: AppScreens.signUpScreen,
       builder: (BuildContext context, GoRouterState state) {
         return const SignUpScreen();
+      },
+    ),
+    GoRoute(
+      path: AppScreens.forgetPasswordScreen,
+      builder: (BuildContext context, GoRouterState state) {
+        return const ForgetPasswordScreen();
       },
     ),
   ],

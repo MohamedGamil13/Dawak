@@ -11,6 +11,16 @@ abstract class AppStyles {
     fontWeight: .w500,
     color: AppColors.graySubtitle,
   );
+  static const TextStyle w500gray18 = TextStyle(
+    fontSize: 18,
+    fontWeight: .w500,
+    color: AppColors.graySubtitle,
+  );
+  static const TextStyle w500gray16 = TextStyle(
+    fontSize: 16,
+    fontWeight: .w500,
+    color: AppColors.graySubtitle,
+  );
   static const TextStyle w500black10 = TextStyle(
     fontSize: 15,
     fontWeight: .w500,
@@ -21,6 +31,11 @@ abstract class AppStyles {
   );
   static const TextStyle w500green20 = TextStyle(
     fontSize: 20,
+    fontWeight: .w500,
+    color: AppColors.darkGreen,
+  );
+  static const TextStyle w500green18 = TextStyle(
+    fontSize: 18,
     fontWeight: .w500,
     color: AppColors.darkGreen,
   );
