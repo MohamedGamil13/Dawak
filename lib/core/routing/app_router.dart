@@ -3,11 +3,14 @@ import 'package:dawak/features/auth/presentation/views/biometric_auth_screen.dar
 import 'package:dawak/features/auth/presentation/views/forget_password_screen.dart';
 import 'package:dawak/features/auth/presentation/views/sign_in_screen.dart';
 import 'package:dawak/features/auth/presentation/views/sign_up_screen.dart';
+import 'package:dawak/features/onboarding/presentation/ViewModel/page_view_provider.dart';
 import 'package:dawak/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
 
 final GoRouter router = GoRouter(
+  initialLocation: AppScreens.onboardingScreen,
   routes: <RouteBase>[
     GoRoute(
       path: AppScreens.homeScreen,
@@ -18,7 +21,10 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: AppScreens.onboardingScreen,
       builder: (BuildContext context, GoRouterState state) {
-        return const OnboardingScreen();
+        return ChangeNotifierProvider(
+          create: (BuildContext context) => PageViewProvider(),
+          child: const OnboardingScreen(),
+        );
       },
     ),
     GoRoute(

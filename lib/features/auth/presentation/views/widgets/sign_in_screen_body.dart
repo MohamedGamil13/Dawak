@@ -1,4 +1,3 @@
-import 'package:dawak/core/locator/service_locator.dart';
 import 'package:dawak/core/routing/app_navigator.dart';
 import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/core/theme/styles/app_styles.dart';
@@ -70,7 +69,7 @@ class SignInScreenBody extends StatelessWidget {
             ),
             TextButton(
               onPressed: () {
-                serviceLocator<AppNavigator>().goForgetPassword();
+                context.goForgetPassword();
               },
               style: TextButton.styleFrom(foregroundColor: AppColors.green),
               child: Align(
@@ -80,7 +79,7 @@ class SignInScreenBody extends StatelessWidget {
             ),
             CustomButton(
               onPressed: () {
-                serviceLocator<AppNavigator>().goSignUp();
+                context.goSignUp();
               },
               text: S.of(context).login,
             ),

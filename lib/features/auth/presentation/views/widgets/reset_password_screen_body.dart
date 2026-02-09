@@ -1,4 +1,3 @@
-import 'package:dawak/core/locator/service_locator.dart';
 import 'package:dawak/core/routing/app_navigator.dart';
 import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/core/theme/styles/app_styles.dart';
@@ -73,7 +72,7 @@ class ResetPasswordScreenBody extends StatelessWidget {
                   style: AppStyles.w500green18,
                   recognizer: TapGestureRecognizer()
                     ..onTap = () {
-                      serviceLocator<AppNavigator>().goSignIn();
+                      context.goSignIn();
                     },
                 ),
               ],

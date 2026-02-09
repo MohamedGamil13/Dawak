@@ -30,7 +30,7 @@ class OnBoradingLayout extends StatelessWidget {
             padding: EdgeInsets.only(bottom: 12.h),
             child: CustomButton(
               onPressed: () {
-                context.read<PageViewProvider>().goNextPage();
+                context.read<PageViewProvider>().goNextPage(context);
               },
               text: S.of(context).nextButton,
             ),

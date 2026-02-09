@@ -1,4 +1,3 @@
-import 'package:dawak/core/locator/service_locator.dart';
 import 'package:dawak/core/routing/app_navigator.dart';
 import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/core/theme/styles/app_styles.dart';
@@ -50,7 +49,7 @@ class SignUpScreenBody extends StatelessWidget {
           const CustomCheckbox(),
           CustomButton(
             onPressed: () {
-              serviceLocator<AppNavigator>().goBiometric();
+              context.goBiometric();
             },
             text: S.of(context).register,
           ),

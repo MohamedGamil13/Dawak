@@ -3,23 +3,22 @@ import 'package:flutter/material.dart';
 
 class PageViewProvider extends ChangeNotifier {
   final PageController pageController = PageController();
-  final AppNavigator navigator;
 
-  PageViewProvider({required this.navigator});
+  PageViewProvider();
 
   int _currentIndex = 0;
   int get currentIndex => _currentIndex;
 
   static const int lastPageIndex = 3;
 
-  void goNextPage() {
+  void goNextPage(BuildContext context) {
     if (!isFinalPage) {
       pageController.nextPage(
         duration: const Duration(milliseconds: 400),
         curve: Curves.easeInCubic,
       );
     } else {
-      navigator.goSignIn(); // or goHome()
+      context.goSignIn(); // or goHome()
     }
   }
 
