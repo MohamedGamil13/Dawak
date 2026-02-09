@@ -24,24 +24,43 @@ class AuthByBiometric implements AuthServicesRepo {
   }
 
   @override
-  Future<bool> signIn() async {
+  Future<AuthResult> signIn() async {
     try {
-      final bool canAuthenticate = await canSignInBiometric();
-      final bool isActive = await isBiometricActive();
+      final canAuthenticate = await canSignInBiometric();
 
-      if (!canAuthenticate || !isActive) {
-        return false;
+      if (!canAuthenticate) {
+        return AuthFailure(
+          'Device does not support biometrics',
+          AuthFailureType.notSupported,
+        );
       }
 
-      final bool didAuthenticate = await authInstance.authenticate(
+      final isActive = await isBiometricActive();
+
+      if (!isActive) {
+        return AuthFailure(
+          'No biometrics enrolled',
+          AuthFailureType.notEnrolled,
+        );
+      }
+
+      final didAuthenticate = await authInstance.authenticate(
         localizedReason: 'Please authenticate',
         biometricOnly: true,
       );
 
-      return didAuthenticate;
+      if (didAuthenticate) {
+        return AuthSuccess();
+      } else {
+        return AuthFailure('Authentication failed', AuthFailureType.failed);
+      }
     } on LocalAuthException catch (e) {
-      print("Biometric Error: ${e.code}");
-      return false;
+      return AuthFailure(
+        e.description ?? 'Biometric error',
+        AuthFailureType.unknown,
+      );
+    } catch (_) {
+      return AuthFailure('Unexpected error occurred', AuthFailureType.unknown);
     }
   }
 }
