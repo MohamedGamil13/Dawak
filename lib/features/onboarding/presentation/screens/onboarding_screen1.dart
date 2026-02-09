@@ -16,12 +16,7 @@ class OnboardingScreen1 extends StatelessWidget {
         children: [
           const DoctorImage(),
           Text(
-            S.of(context).onBorading1solgan1,
-            style: AppStyles.bold32black,
-            textAlign: TextAlign.center,
-          ),
-          Text(
-            S.of(context).onBorading1solgan2,
+            '${S.of(context).onBorading1solgan1}\n${S.of(context).onBorading1solgan2}',
             style: AppStyles.bold32black,
             textAlign: TextAlign.center,
           ),

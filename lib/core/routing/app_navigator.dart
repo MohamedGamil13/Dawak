@@ -9,4 +9,7 @@ extension AppNavigator on BuildContext {
   void goSignUp() => go(AppScreens.signUpScreen);
   void goForgetPassword() => go(AppScreens.forgetPasswordScreen);
   void goBiometric() => go(AppScreens.biometricScreen);
+  void pushSignUp() => push(AppScreens.signUpScreen);
+  void pushForgetPassword() => push(AppScreens.forgetPasswordScreen);
+  void goBack() => pop();
 }

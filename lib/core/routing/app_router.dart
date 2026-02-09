@@ -3,9 +3,8 @@ import 'package:dawak/features/auth/presentation/views/biometric_auth_screen.dar
 import 'package:dawak/features/auth/presentation/views/forget_password_screen.dart';
 import 'package:dawak/features/auth/presentation/views/sign_in_screen.dart';
 import 'package:dawak/features/auth/presentation/views/sign_up_screen.dart';
-import 'package:dawak/features/onboarding/presentation/ViewModel/page_view_provider.dart';
 import 'package:dawak/features/onboarding/presentation/screens/onboarding_screen.dart';
-import 'package:flutter/material.dart';
+import 'package:dawak/features/onboarding/presentation/viewmodel/page_view_provider.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
@@ -13,43 +12,37 @@ final GoRouter router = GoRouter(
   initialLocation: AppScreens.onboardingScreen,
   routes: <RouteBase>[
     GoRoute(
-      path: AppScreens.homeScreen,
-      builder: (BuildContext context, GoRouterState state) {
-        return const OnboardingScreen();
-      },
-    ),
-    GoRoute(
       path: AppScreens.onboardingScreen,
-      builder: (BuildContext context, GoRouterState state) {
+      builder: (context, state) {
         return ChangeNotifierProvider(
-          create: (BuildContext context) => PageViewProvider(),
+          create: (_) => PageViewProvider(),
           child: const OnboardingScreen(),
         );
       },
     ),
+
     GoRoute(
       path: AppScreens.signInScreen,
-      builder: (BuildContext context, GoRouterState state) {
-        return const SignInScreen();
-      },
+      builder: (context, state) => const SignInScreen(),
     ),
+
     GoRoute(
       path: AppScreens.signUpScreen,
-      builder: (BuildContext context, GoRouterState state) {
-        return const SignUpScreen();
-      },
+      builder: (context, state) => const SignUpScreen(),
     ),
+
     GoRoute(
       path: AppScreens.forgetPasswordScreen,
-      builder: (BuildContext context, GoRouterState state) {
-        return const ForgetPasswordScreen();
-      },
+      builder: (context, state) => const ForgetPasswordScreen(),
     ),
+
     GoRoute(
       path: AppScreens.biometricScreen,
-      builder: (BuildContext context, GoRouterState state) {
-        return const BiometricAuthScreen();
-      },
+      builder: (context, state) => const BiometricAuthScreen(),
+    ),
+    GoRoute(
+      path: AppScreens.homeScreen,
+      builder: (context, state) => const OnboardingScreen(),
     ),
   ],
 );

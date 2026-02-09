@@ -1,4 +1,5 @@
 import 'package:dawak/core/routing/app_navigator.dart';
+import 'package:dawak/features/onboarding/constants/onboarding_constants.dart';
 import 'package:flutter/material.dart';
 
 class PageViewProvider extends ChangeNotifier {
@@ -9,13 +10,13 @@ class PageViewProvider extends ChangeNotifier {
   int _currentIndex = 0;
   int get currentIndex => _currentIndex;
 
-  static const int lastPageIndex = 3;
+  static const int lastPageIndex = OnboardingConstants.lastPageIndex;
 
   void goNextPage(BuildContext context) {
     if (!isFinalPage) {
       pageController.nextPage(
-        duration: const Duration(milliseconds: 400),
-        curve: Curves.easeInCubic,
+        duration: OnboardingConstants.animationDuration,
+        curve: OnboardingConstants.animationCurve,
       );
     } else {
       context.goSignIn(); // or goHome()
