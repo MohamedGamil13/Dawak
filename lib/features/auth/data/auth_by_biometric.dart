@@ -55,6 +55,14 @@ class AuthByBiometric implements AuthServicesRepo {
         return AuthFailure('Authentication failed', AuthFailureType.failed);
       }
     } on LocalAuthException catch (e) {
+      if (e.code == LocalAuthExceptionCode.userCanceled ||
+          e.code == LocalAuthExceptionCode.systemCanceled) {
+        return AuthFailure(
+          'Authentication cancelled',
+          AuthFailureType.cancelled,
+        );
+      }
+
       return AuthFailure(
         e.description ?? 'Biometric error',
         AuthFailureType.unknown,
