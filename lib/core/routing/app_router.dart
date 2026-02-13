@@ -14,7 +14,7 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 final GoRouter router = GoRouter(
-  // initialLocation: AppScreens.onboardingScreen,
+  initialLocation: AppScreens.onboardingScreen,
   routes: <RouteBase>[
     GoRoute(
       path: AppScreens.onboardingScreen,
