@@ -12,10 +12,12 @@ class SharedPref extends LocalStorage {
     }
   }
 
+  @override
   Future<bool> isFirstTime() async {
     return _prefs.getBool(AppKeys.firstTimeKey) ?? true;
   }
 
+  @override
   Future<void> setIsFirstTimeFalse() async {
     await _prefs.setBool(AppKeys.firstTimeKey, false);
   }

@@ -1,9 +1,13 @@
+import 'package:dawak/core/locator/service_locator.dart';
 import 'package:dawak/core/routing/app_navigator.dart';
+import 'package:dawak/core/storage/local_storage.dart';
+import 'package:dawak/core/storage/shared_pref.dart';
 import 'package:dawak/features/onboarding/constants/onboarding_constants.dart';
 import 'package:flutter/material.dart';
 
 class PageViewProvider extends ChangeNotifier {
   final PageController pageController = PageController();
+  final LocalStorage localStorage = serviceLocator<SharedPref>();
 
   PageViewProvider();
 
@@ -19,6 +23,7 @@ class PageViewProvider extends ChangeNotifier {
         curve: OnboardingConstants.animationCurve,
       );
     } else {
+      setisfirstTimeKeyFalse();
       context.goSignIn(); // or goHome()
     }
   }
@@ -28,6 +33,10 @@ class PageViewProvider extends ChangeNotifier {
   void updatePageIndex(int pageIndex) {
     _currentIndex = pageIndex;
     notifyListeners();
+  }
+
+  void setisfirstTimeKeyFalse() async {
+    localStorage.setIsFirstTimeFalse();
   }
 
   @override
