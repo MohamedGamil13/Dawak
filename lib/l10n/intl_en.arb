@@ -57,5 +57,7 @@
   "biometricDescription": "Quickly and securely access your prescriptions, medical records, and pharmacist consultations",
   "enableFaceId": "Enable Face ID",
   "usePasswordInstead": "Use Password Instead",
-  "security": "Security"
+  "security": "Security",
+  "dontHaveAccount": "Don't have an account?",
+  "signUp": "Sign Up"
 }

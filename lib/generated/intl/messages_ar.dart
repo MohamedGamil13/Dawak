@@ -45,6 +45,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "دعم مباشر",
     ),
     "createAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
+    "dontHaveAccount": MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
     "emailAddress": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
     "enableFaceId": MessageLookupByLibrary.simpleMessage("تفعيل بصمة الوجه"),
@@ -133,6 +134,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "يمكنك الوصول إلى روشتاتك واستشارات الصيدلي",
     ),
     "signInScreenTitle": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+    "signUp": MessageLookupByLibrary.simpleMessage("سجل الآن"),
     "signUpSubtitle": MessageLookupByLibrary.simpleMessage(
       "انضم إلى مجتمعنا للحصول على توصيل أسرع للأدوية واستشارات طبية متخصصة",
     ),

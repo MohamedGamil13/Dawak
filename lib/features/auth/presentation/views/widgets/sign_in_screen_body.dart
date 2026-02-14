@@ -5,6 +5,7 @@ import 'package:dawak/core/widgets/custom_button.dart';
 import 'package:dawak/core/widgets/custom_textfeild.dart';
 import 'package:dawak/core/widgets/sqaure_icon.dart';
 import 'package:dawak/generated/l10n.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -79,9 +80,30 @@ class SignInScreenBody extends StatelessWidget {
             ),
             CustomButton(
               onPressed: () {
-                context.goSignUp();
+                context.goHome();
               },
               text: S.of(context).login,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "${S.of(context).dontHaveAccount} ",
+                      style: AppStyles.w500gray18,
+                    ),
+                    TextSpan(
+                      text: S.of(context).signUp,
+                      style: AppStyles.w500green18,
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          context.goSignUp();
+                        },
+                    ),
+                  ],
+                ),
+              ),
             ),
           ],
         ),

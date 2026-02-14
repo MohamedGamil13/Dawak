@@ -47,6 +47,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Live Support",
     ),
     "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
+    "dontHaveAccount": MessageLookupByLibrary.simpleMessage(
+      "Don\'t have an account?",
+    ),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
     "emailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
     "enableFaceId": MessageLookupByLibrary.simpleMessage("Enable Face ID"),
@@ -137,6 +140,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Access your prescriptions and pharmacist consultations",
     ),
     "signInScreenTitle": MessageLookupByLibrary.simpleMessage("Sign In"),
+    "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
     "signUpSubtitle": MessageLookupByLibrary.simpleMessage(
       "Join our community for faster medicine delivery and expert consultation",
     ),

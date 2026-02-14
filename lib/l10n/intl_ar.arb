@@ -57,5 +57,7 @@
   "biometricDescription": "يمكنك الوصول بسرعة وأمان إلى وصفاتك الطبية وسجلاتك الصحية واستشارات الصيدلي",
   "enableFaceId": "تفعيل بصمة الوجه",
   "usePasswordInstead": "استخدام كلمة المرور بدلاً من ذلك",
-  "security": "الأمان"
+  "security": "الأمان",
+  "dontHaveAccount": "ليس لديك حساب؟",
+  "signUp": "سجل الآن"
 }
