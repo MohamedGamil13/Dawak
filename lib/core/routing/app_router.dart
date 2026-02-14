@@ -1,5 +1,6 @@
 import 'package:dawak/core/locator/service_locator.dart';
 import 'package:dawak/core/routing/app_screens.dart';
+import 'package:dawak/core/storage/local_storage.dart';
 import 'package:dawak/features/auth/data/repos/auth_services.dart';
 import 'package:dawak/features/auth/presentation/view_model/local_auth_cubit.dart';
 import 'package:dawak/features/auth/presentation/views/biometric_auth_screen.dart';
@@ -14,7 +15,9 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 final GoRouter router = GoRouter(
-  initialLocation: AppScreens.onboardingScreen,
+  initialLocation: serviceLocator<LocalStorage>().isFirstTime()
+      ? AppScreens.onboardingScreen
+      : AppScreens.signInScreen,
   routes: <RouteBase>[
     GoRoute(
       path: AppScreens.onboardingScreen,

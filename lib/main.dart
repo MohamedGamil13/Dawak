@@ -1,5 +1,6 @@
 import 'package:dawak/core/locator/service_locator.dart';
 import 'package:dawak/core/routing/app_router.dart';
+import 'package:dawak/core/storage/local_storage.dart';
 import 'package:dawak/core/theme/colors/app_colors.dart';
 import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -10,6 +11,8 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await ScreenUtil.ensureScreenSize();
   setupDependencies();
+  await serviceLocator<LocalStorage>().initLocalStorage();
+
   runApp(const Dawak());
 }
 

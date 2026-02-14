@@ -13,7 +13,7 @@ class SharedPref extends LocalStorage {
   }
 
   @override
-  Future<bool> isFirstTime() async {
+  bool isFirstTime() {
     return _prefs.getBool(AppKeys.firstTimeKey) ?? true;
   }
 

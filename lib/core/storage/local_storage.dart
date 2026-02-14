@@ -1,5 +1,5 @@
 abstract class LocalStorage {
   Future<void> initLocalStorage();
-  Future<bool> isFirstTime();
+  bool isFirstTime();
   Future<void> setIsFirstTimeFalse();
 }

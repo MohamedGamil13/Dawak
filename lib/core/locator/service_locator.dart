@@ -1,3 +1,4 @@
+import 'package:dawak/core/storage/local_storage.dart';
 import 'package:dawak/core/storage/shared_pref.dart';
 import 'package:dawak/features/auth/data/auth_by_biometric.dart';
 import 'package:dawak/features/auth/data/repos/auth_services.dart';
@@ -6,12 +7,12 @@ import 'package:local_auth/local_auth.dart';
 
 final serviceLocator = GetIt.instance;
 
-void setupDependencies() {
+void setupDependencies() async {
   serviceLocator.registerLazySingleton<LocalAuthentication>(
     () => LocalAuthentication(),
   );
   serviceLocator.registerLazySingleton<AuthServicesRepo>(
     () => AuthByBiometric(),
   );
-  serviceLocator.registerLazySingleton<SharedPref>(() => SharedPref());
+  serviceLocator.registerLazySingleton<LocalStorage>(() => SharedPref());
 }
