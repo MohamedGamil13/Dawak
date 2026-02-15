@@ -1,4 +1,4 @@
-import 'package:dawak/core/theme/styles/app_styles.dart';
+import 'package:dawak/core/utils/theme/styles/app_styles.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/doctor_image.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/on_borading_layout.dart';
 import 'package:dawak/generated/l10n.dart';

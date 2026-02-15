@@ -1,4 +1,4 @@
-import 'package:dawak/core/routing/app_screens.dart';
+import 'package:dawak/core/utils/routing/app_screens.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

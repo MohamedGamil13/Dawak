@@ -1,4 +1,4 @@
-import 'package:dawak/core/theme/colors/app_colors.dart';
+import 'package:dawak/core/utils/theme/colors/app_colors.dart';
 import 'package:dawak/core/widgets/custom_icon.dart';
 import 'package:flutter/material.dart';
 

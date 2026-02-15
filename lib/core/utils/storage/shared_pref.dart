@@ -1,5 +1,5 @@
 import 'package:dawak/core/constants/app_keys.dart';
-import 'package:dawak/core/storage/local_storage.dart';
+import 'package:dawak/core/utils/storage/local_storage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPref extends LocalStorage {

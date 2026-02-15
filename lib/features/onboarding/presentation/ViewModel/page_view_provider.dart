@@ -1,6 +1,6 @@
 import 'package:dawak/core/locator/service_locator.dart';
-import 'package:dawak/core/routing/app_navigator.dart';
-import 'package:dawak/core/storage/local_storage.dart';
+import 'package:dawak/core/utils/routing/app_navigator.dart';
+import 'package:dawak/core/utils/storage/local_storage.dart';
 import 'package:dawak/features/onboarding/constants/onboarding_constants.dart';
 import 'package:flutter/material.dart';
 

@@ -1,6 +1,6 @@
-import 'package:dawak/core/routing/app_navigator.dart';
-import 'package:dawak/core/theme/colors/app_colors.dart';
-import 'package:dawak/core/theme/styles/app_styles.dart';
+import 'package:dawak/core/utils/routing/app_navigator.dart';
+import 'package:dawak/core/utils/theme/colors/app_colors.dart';
+import 'package:dawak/core/utils/theme/styles/app_styles.dart';
 import 'package:dawak/core/widgets/custom_button.dart';
 import 'package:dawak/core/widgets/custom_textfeild.dart';
 import 'package:dawak/core/widgets/sqaure_icon.dart';

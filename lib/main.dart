@@ -1,7 +1,7 @@
 import 'package:dawak/core/locator/service_locator.dart';
-import 'package:dawak/core/routing/app_router.dart';
-import 'package:dawak/core/storage/local_storage.dart';
-import 'package:dawak/core/theme/colors/app_colors.dart';
+import 'package:dawak/core/utils/routing/app_router.dart';
+import 'package:dawak/core/utils/storage/local_storage.dart';
+import 'package:dawak/core/utils/theme/colors/app_colors.dart';
 import 'package:dawak/firebase_options.dart';
 import 'package:dawak/generated/l10n.dart';
 import 'package:firebase_core/firebase_core.dart';

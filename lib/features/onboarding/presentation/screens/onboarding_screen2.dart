@@ -1,4 +1,4 @@
-import 'package:dawak/core/theme/styles/app_styles.dart';
+import 'package:dawak/core/utils/theme/styles/app_styles.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/feature_items_row.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/medication_search_card.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/on_borading_layout.dart';

@@ -1,7 +1,7 @@
 import 'package:dawak/core/constants/app_images.dart';
-import 'package:dawak/core/routing/app_navigator.dart';
-import 'package:dawak/core/theme/colors/app_colors.dart';
-import 'package:dawak/core/theme/styles/app_styles.dart';
+import 'package:dawak/core/utils/routing/app_navigator.dart';
+import 'package:dawak/core/utils/theme/colors/app_colors.dart';
+import 'package:dawak/core/utils/theme/styles/app_styles.dart';
 import 'package:dawak/core/widgets/custom_button.dart';
 import 'package:dawak/core/widgets/image_container.dart';
 import 'package:dawak/features/auth/presentation/view_model/local_auth_cubit.dart';

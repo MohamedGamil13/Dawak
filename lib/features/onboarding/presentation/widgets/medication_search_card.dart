@@ -1,4 +1,4 @@
-import 'package:dawak/core/theme/colors/app_colors.dart';
+import 'package:dawak/core/utils/theme/colors/app_colors.dart';
 import 'package:dawak/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +35,10 @@ class MedicationSearchCard extends StatelessWidget {
                 const SizedBox(width: 10),
                 Text(
                   S.of(context).searchHint,
-                  style: const TextStyle(color: AppColors.darkGreen, fontSize: 16),
+                  style: const TextStyle(
+                    color: AppColors.darkGreen,
+                    fontSize: 16,
+                  ),
                 ),
               ],
             ),

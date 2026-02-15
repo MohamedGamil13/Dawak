@@ -1,5 +1,5 @@
 import 'package:dawak/core/constants/app_images.dart';
-import 'package:dawak/core/theme/colors/app_colors.dart';
+import 'package:dawak/core/utils/theme/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

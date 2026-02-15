@@ -1,4 +1,4 @@
-import 'package:dawak/core/theme/colors/app_colors.dart';
+import 'package:dawak/core/utils/theme/colors/app_colors.dart';
 import 'package:dawak/core/widgets/custom_listtile.dart';
 import 'package:dawak/features/onboarding/presentation/widgets/subscription_card.dart';
 import 'package:dawak/generated/l10n.dart';
