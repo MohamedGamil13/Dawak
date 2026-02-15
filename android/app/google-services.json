@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "534674979923",
+    "project_id": "dawak-5cd94",
+    "storage_bucket": "dawak-5cd94.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534674979923:android:ec226f14d0b498ae595aa6",
+        "android_client_info": {
+          "package_name": "com.example.dawak"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYQUTkQD1B5T7rAJcBgdY2OA-eGwxEP_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
